@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "65dc17ec6cc241acd8afc242"
+  },
+  "name": "Kho 3",
+  "productId": [
+    {
+      "$oid": "65a24eccee9ebf10e02f4a77"
+    },
+    {
+      "$oid": "65a258e6aad7746a1db20060"
+    }
+  ],
+  "allInventory": 0,
+  "address": "Mỹ Đình",
+  "totalSoldOuts": 32659000,
+  "phoneNumber": "098765432",
+  "productInventory": [],
+  "createdAt": {
+    "$date": "2024-02-26T11:47:40.387Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:24:59.579Z"
+  },
+  "status": "0"
+},{
+  "_id": {
+    "$oid": "661956d02504fc9e13844bfd"
+  },
+  "name": "Kho 1",
+  "productId": [],
+  "address": "Đống Đa",
+  "phoneNumber": "0977564727",
+  "productInventory": [],
+  "status": "0",
+  "createdAt": {
+    "$date": "2024-04-12T15:44:16.428Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:23:11.176Z"
+  },
+  "allInventory": 0
+}]

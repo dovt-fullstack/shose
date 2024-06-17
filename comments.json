@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "6560591108a20c4d9cd07dc5"
+  },
+  "content": "okkok",
+  "fullname": "Trần Hữu Hưng",
+  "userId": {
+    "$oid": "655ce9e52a5953e499239e52"
+  },
+  "productId": {
+    "$oid": "655e3c27d15efb8e3c75f8b0"
+  },
+  "createdAt": {
+    "$date": "2023-11-24T15:04:33.728Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-24T15:04:33.728Z"
+  }
+},{
+  "_id": {
+    "$oid": "656052e108a20c4d9cd07d84"
+  },
+  "content": "giày đẹp ",
+  "fullname": "Trần Hữu Hưng",
+  "userId": {
+    "$oid": "655ce9e52a5953e499239e52"
+  },
+  "productId": {
+    "$oid": "655e3a91d15efb8e3c75f867"
+  },
+  "createdAt": {
+    "$date": "2023-11-24T14:38:09.918Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-24T14:38:09.918Z"
+  }
+},{
+  "_id": {
+    "$oid": "659f821c8b917523a01728d5"
+  },
+  "content": "goood",
+  "fullname": "Dương Xuân Văn",
+  "userId": {
+    "$oid": "65606979d64aaded70cde8e9"
+  },
+  "productId": {
+    "$oid": "658531d62a0d93829087edb0"
+  },
+  "createdAt": {
+    "$date": "2024-01-11T12:52:28.463Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-11T12:52:28.463Z"
+  }
+},{
+  "_id": {
+    "$oid": "65a7438d1ece6a14227f2c2a"
+  },
+  "content": "giày đẹp",
+  "fullname": "Dương Xuân Văn",
+  "userId": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "productId": {
+    "$oid": "655e3aeed15efb8e3c75f87b"
+  },
+  "createdAt": {
+    "$date": "2024-01-17T10:03:42.297Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T10:03:42.297Z"
+  }
+}]

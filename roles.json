@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "65606979d64aaded70cde8e7"
+  },
+  "role_name": "user",
+  "description": "người dùng",
+  "trang_thai": "Active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "655398e813c0be9c43ee8c4d"
+  },
+  "role_name": "quản lý",
+  "description": "quản lý cửa Hàng",
+  "trang_thai": "Active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6545036de84d7e9cc42a5050"
+  },
+  "role_name": "admin",
+  "description": "admin",
+  "trang_thai": "Active",
+  "__v": 0
+}]

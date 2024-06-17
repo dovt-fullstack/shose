@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "655e2cddd15efb8e3c75f787"
+  },
+  "name": "ADIDAS",
+  "desciption": "Adidas Collection",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1709434377/datn/jzx4epbk8hrbruhch2f1.png"
+  ],
+  "createdAt": {
+    "$date": "2023-11-22T16:31:25.726Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661bf04b16ae79745f6e69b7"
+  },
+  "name": "NIKE",
+  "desciption": "NIKE COLLECTION",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1713107018/datn/heptqss8uuf1ozz3m2h9.jpg"
+  ],
+  "createdAt": {
+    "$date": "2024-04-14T15:03:39.109Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661bf07416ae79745f6e69c5"
+  },
+  "name": "MLB",
+  "desciption": "MLB COLLECTION",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1713107059/datn/nq99ta2pmksg37wiyhn1.png"
+  ],
+  "createdAt": {
+    "$date": "2024-04-14T15:04:20.153Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661bf09216ae79745f6e69ca"
+  },
+  "name": "VANS",
+  "desciption": "VANS COLLECTION",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1713107089/datn/jffu25y70kcqgfnm9d6z.png"
+  ],
+  "createdAt": {
+    "$date": "2024-04-14T15:04:50.668Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633f8999655eb90c6bcb374"
+  },
+  "name": "ASICS",
+  "desciption": "ASICS COLLECTION",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1714682009/datn/n4p50aeolaudu1lallu7.jpg"
+  ],
+  "createdAt": {
+    "$date": "2024-05-02T20:33:29.084Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633f8b19655eb90c6bcb377"
+  },
+  "name": "CONVERSE",
+  "desciption": "CONVERSE COLLECTION",
+  "image": [
+    "https://res.cloudinary.com/drquzvhxt/image/upload/v1714682034/datn/pe3na3nb56ironwkatyo.jpg"
+  ],
+  "createdAt": {
+    "$date": "2024-05-02T20:33:53.957Z"
+  },
+  "__v": 0
+}]

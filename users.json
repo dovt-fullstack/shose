@@ -1,0 +1,305 @@
+[{
+  "_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "name": "Hưng ",
+  "fullname": "Trần Hữu Hưng",
+  "ngaysinh": {
+    "$date": "2003-09-13T17:00:00.000Z"
+  },
+  "email": "admin@gmail.com",
+  "password": "$2a$15$/nYbsrQI7yeZF5ycJlH4y.3Ip38a7LhRW.zr.BpOU7F9DlW375Z.W",
+  "role": {
+    "$oid": "6545036de84d7e9cc42a5050"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2023-11-21T02:07:47.793Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T14:47:40.364Z"
+  },
+  "otp": null,
+  "is_deleted": false,
+  "phone": "0969718192"
+},{
+  "_id": {
+    "$oid": "65a8ccfed3aa641d51a82dfd"
+  },
+  "name": "Trường",
+  "fullname": "Vũ Hữu Trường",
+  "ngaysinh": {
+    "$date": "2003-08-03T00:00:00.000Z"
+  },
+  "phone": "0344272661",
+  "email": "truong@gmail.com",
+  "password": "$2a$10$1va36PABjG0tRgyo0FRmpOT9NHt9coxyLpf9tTR3di0TAmZoDhQN.",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Inactive",
+  "favoriteProducts": [],
+  "is_deleted": false,
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-01-18T14:02:22.547Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T18:03:23.105Z"
+  }
+},{
+  "_id": {
+    "$oid": "65f47064d82ab41e0a490549"
+  },
+  "name": "ahihi",
+  "fullname": "ahehe",
+  "ngaysinh": {
+    "$date": "2024-03-06T00:00:00.000Z"
+  },
+  "email": "abc@gmail.com",
+  "password": "$2a$10$O2ldOC900unSjp.9QgQ9EeyfYTNLE3.WmJHaavw0GlvAqp7NnKZNG",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-03-15T15:59:32.860Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T18:33:00.789Z"
+  }
+},{
+  "_id": {
+    "$oid": "661958112504fc9e13845175"
+  },
+  "name": "anh",
+  "fullname": "van",
+  "ngaysinh": {
+    "$date": "2001-08-25T00:00:00.000Z"
+  },
+  "email": "anhvan@gmail.com",
+  "password": "$2a$10$BPfx8HEeZlR62HlMIpT7..iWErRQToxPw..TW1xQiFhRArU7THdra",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-04-12T15:49:37.976Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T18:03:42.416Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633ea6e8a245f7494a59843"
+  },
+  "name": "xuanvan01",
+  "fullname": "Dương Xuân Văn",
+  "ngaysinh": {
+    "$date": "2001-08-24T17:00:00.000Z"
+  },
+  "email": "xuanvan.duong2001@gmail.com",
+  "password": "$2a$10$iZOS9gQyNnZlC8v/n4v7Ge9VZT8VtNCzJWN8aS3MUxr0.//mJBEoq",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T19:33:02.426Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:36:34.069Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633eb6d8a245f7494a599cd"
+  },
+  "name": "vanvan",
+  "fullname": "vanvan",
+  "ngaysinh": {
+    "$date": "2024-04-29T17:00:00.000Z"
+  },
+  "email": "vanvan@gmail.com",
+  "password": "$2a$10$cN0QW7uuSj5EvCpbqES9.eIiDhTh8N63AsO/am2EvsRofauApohz2",
+  "role": {
+    "$oid": "6633f0b48a245f7494a5a747"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T19:37:17.196Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:01:02.582Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633ec168a245f7494a59b09"
+  },
+  "name": "Dương",
+  "fullname": "Xuân Văn",
+  "ngaysinh": {
+    "$date": "2001-08-25T00:00:00.000Z"
+  },
+  "email": "xuanvan.duong2002@gmail.com",
+  "password": "$2a$10$TsYsorctPNPhkN8xqadYEubSysOVh/t0BHXA1S3lgI4d7Y62LsAF.",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T19:40:06.429Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:15:37.004Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633ec448a245f7494a59b12"
+  },
+  "name": "Dương",
+  "fullname": "Xuân Văn",
+  "ngaysinh": {
+    "$date": "2001-05-09T00:00:00.000Z"
+  },
+  "email": "xuanvan.duong21@gmail.com",
+  "password": "$2a$10$Gd/yGQ4gOc2.fmhwCioi7uIcPqyajQ22T3dmbFly3pGHUfs2uJke2",
+  "role": {
+    "$oid": "655398e813c0be9c43ee8c4d"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T19:40:52.624Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:15:44.818Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633ed2f8a245f7494a59b1a"
+  },
+  "name": "Dương",
+  "fullname": "Xuân Văn",
+  "ngaysinh": {
+    "$date": "2001-08-23T00:00:00.000Z"
+  },
+  "email": "xuanvan.duong2003@gmail.com",
+  "password": "$2a$10$4/qJ79T7FnfU0zFLvnQFiuLEP0ogL298I.kosEFo/lBQcwfqsLPZy",
+  "role": {
+    "$oid": "6550ec093b55d14a67d2b72b"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T19:44:47.816Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:57:42.135Z"
+  }
+},{
+  "_id": {
+    "$oid": "6633f7d49655eb90c6bcb370"
+  },
+  "name": "Khách hàng",
+  "fullname": "Khách hàng",
+  "ngaysinh": {
+    "$date": "2008-05-07T17:00:00.000Z"
+  },
+  "email": "user@gmail.com",
+  "password": "$2a$10$GdyiRx.j/ERzXKh9hH3l1OlcDXsqQ8QMsOqb8PA3GW1cPH/n/bNJW",
+  "role": {
+    "$oid": "65606979d64aaded70cde8e7"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-05-02T20:30:12.945Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:30:12.945Z"
+  }
+},{
+  "_id": {
+    "$oid": "666033d8716f7449d5d91e95"
+  },
+  "name": "Đạt",
+  "fullname": "Nguyễn Xuân Đạt",
+  "ngaysinh": {
+    "$date": "2003-12-01T00:00:00.000Z"
+  },
+  "email": "dat@gmail.com",
+  "password": "$2a$10$2IHIZ.WGrMm5cqwylrH7xe8iCjqL063ftGc1oFh2o8jXe3nX1oEZK",
+  "role": {
+    "$oid": "65606979d64aaded70cde8e7"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-06-05T09:46:00.040Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-05T09:46:00.380Z"
+  }
+},{
+  "_id": {
+    "$oid": "666efe81a3cc8ee950d599d2"
+  },
+  "name": "thành đô vũ",
+  "fullname": "thanhdo vu",
+  "ngaysinh": {
+    "$date": "2024-06-13T00:00:00.000Z"
+  },
+  "email": "dovtph24172@fpt.edu.vn",
+  "password": "$2a$10$yoRTPlsM5veGcHIPsBeTv.MhL1KvUSFenjIeSg9PklhUuFkDd8.Uy",
+  "role": {
+    "$oid": "6545036de84d7e9cc42a5050"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-06-16T15:02:25.506Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T15:02:25.506Z"
+  }
+},{
+  "_id": {
+    "$oid": "666f05aa14a9f4f72c5e7f6c"
+  },
+  "name": "thành đô vũ123",
+  "fullname": "vu thanh do2",
+  "ngaysinh": {
+    "$date": "1997-06-05T00:00:00.000Z"
+  },
+  "email": "thanhdo9xi@gmail.com",
+  "password": "$2a$10$feUgQJQ02MsH.fryCRjiF.Ryb112h446gJT47QFBuPz.cJkDUeZSm",
+  "role": {
+    "$oid": "6545036de84d7e9cc42a5050"
+  },
+  "trang_thai": "Active",
+  "favoriteProducts": [],
+  "addressUser": [],
+  "createdAt": {
+    "$date": "2024-06-16T15:32:58.211Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T15:32:58.211Z"
+  }
+}]

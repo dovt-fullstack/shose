@@ -1,0 +1,4196 @@
+[{
+  "_id": {
+    "$oid": "65a6db56c29515571cea75aa"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 4490000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:39:03.207Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T19:41:43.132Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a24876c9bd91bff08e3780"
+  },
+  "address": "{\"name\":\"a\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "659975cf4978bcffb851cc98"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "#898484",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 6000000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-01T08:23:19.353Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-01T08:24:44.256Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a2780cde94f009f044ee7b"
+  },
+  "address": "{\"name\":\"aaaaaa\",\"phone\":\"0969718192\",\"address\":\"aaaaaaa\"}",
+  "user_id": {
+    "$oid": "65a25e9308a7da761be4f396"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c27d15efb8e3c75f8b0"
+      },
+      "color": "#60d6e2",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 5000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-01T11:46:21.572Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T05:42:26.990Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a4104a70f09e6826217cb0"
+  },
+  "address": "{\"name\":\"Trần Việt Quangf\",\"phone\":\"0969718191\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a40fb670f09e6826217be3"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "#e2e0e0",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-14T16:48:11.130Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-13T15:43:10.028Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6c96e12bc67d08a52a3c8"
+  },
+  "address": "{\"name\":\"tran viet quang\",\"phone\":\"0969718192\",\"address\":\"Hà Nội\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 54000,
+  "total_amount_paid": 54000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-16T18:22:38.677Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-14T01:57:40.926Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6da42c29515571cea74fe"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 400000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:34:26.920Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T19:41:49.685Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6db28c29515571cea7558"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"thai binh\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 249000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:38:17.330Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T19:41:46.406Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e099c29515571cea77c9"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"aaaaaaaaa\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:01:30.703Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-14T01:57:11.131Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80463bad4f438973a07cb"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"hn\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:46:28.152Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-14T01:57:53.098Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a809d3078aa3f574dfb091"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:09:40.107Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:09:40.107Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8013bd8b238827a0c87dc"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:33:00.060Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:33:00.060Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6acfd8389461b16af5c8b"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"Ha noi no1\"}",
+  "user_id": {
+    "$oid": "65a4eb0b2694c6e84e5ff768"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "39",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 61200,
+  "total_amount_paid": 61200,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-16T16:21:19.297Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T16:21:19.297Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a65d1d42ad24096d291a52"
+  },
+  "address": "{\"name\":\"tran viet quang\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 54000,
+  "total_amount_paid": 54000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T10:40:29.688Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T16:19:28.812Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a167d840a20295d1eb9c80"
+  },
+  "address": "{\"name\":\"aaaa\",\"phone\":\"0969718192\",\"address\":\"123\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "#e2e0e0",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 1690000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-12T16:24:57.186Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T07:44:14.054Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e59d094c6e882f1f814f"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "black",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:22:53.890Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:32:30.853Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6d985c29515571cea749d"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6585dfb12c2316db2e819cb7"
+      },
+      "color": "black",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 3490000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:31:18.628Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T19:34:07.058Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a4e0abfacb368de55b140c"
+  },
+  "address": "{\"name\":\"a\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "#b08787",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 450000,
+  "total_amount_paid": 450000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-15T07:37:15.649Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T07:37:15.649Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a167ff40a20295d1eb9c9a"
+  },
+  "address": "{\"name\":\"q\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "#b08787",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "total_price": 110700,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-12T16:25:36.185Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-12T16:33:22.246Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6dd30c29515571cea7634"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"thai binh\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 400000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:46:57.493Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:01:08.433Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8158e90b56a9fb17a30d5"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "waiting",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 540000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:59:43.292Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:15:31.029Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a65d8842ad24096d291aa5"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"HA NOI\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 450000,
+  "total_amount_paid": 450000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T10:42:16.920Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T10:42:32.580Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a68067e2ea6ba3582678ef"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"Ha Noi\"}",
+  "user_id": {
+    "$oid": "65a4eb0b2694c6e84e5ff768"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531e62a0d93829087edb1"
+      },
+      "color": "xam",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "delivering",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 765000,
+  "total_amount_paid": 765000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T13:11:04.080Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T13:12:42.709Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8057ebad4f438973a0849"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:51:11.289Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:51:11.289Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80d21cdba825d48af271b"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:23:46.148Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:23:46.148Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a805b2bad4f438973a0869"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:52:03.250Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:52:03.250Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80529bad4f438973a0829"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:49:45.540Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:49:45.540Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e15dc29515571cea7821"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"aaaaa\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 5000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:04:45.562Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:04:45.562Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e2f5c29515571cea791e"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"123\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587deeaa91eddc2a5c11b3e"
+      },
+      "color": "red",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 2690000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:11:33.697Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:11:33.697Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e380c29515571cea7974"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 4490000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:13:53.158Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:13:53.158Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a811d9cdba825d48af27c7"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"z\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày MLB BigBall Chunky Monogram",
+      "total_price": 800000
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:43:54.181Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:51:35.775Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8129c90b56a9fb17a2e9f"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1,
+      "name": "Giày Nike Zoom Blazer Low Pro GT SB ‘White"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Nike Zoom Blazer Low Pro GT SB ‘White"
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 498000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:47:09.693Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:50:45.144Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a940412a048b67cd0a7d7a"
+  },
+  "address": "{\"name\":\"Trần Việt Quangggg\",\"phone\":\"0969718191\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "42",
+      "quantity": 1,
+      "name": "Giày Converse Carhartt WIP x Chuck 70 High"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "quangtvph25239@fpt.edu.vn",
+  "total_price": 10000,
+  "total_amount_paid": 10000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T15:14:10.550Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T15:16:11.929Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9c93da54327f445e56cd9"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"Thai Binh\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1,
+      "name": " GIÀY V. A. N. S OLD SKOOL ĐỎ ĐUN"
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 450000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-19T00:59:12.803Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T02:37:46.175Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9e15643ff0b9283a04a2a"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 507000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-19T02:41:28.701Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T02:42:48.160Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a814ba90b56a9fb17a3074"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"thái bình\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 600000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:56:10.812Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:20:21.092Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8cc7bb61968ece628a242"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"abc\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "39",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "green",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    },
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "40",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 2880000,
+  "total_amount_paid": 2880000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T07:00:15.244Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T07:00:15.244Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a94d052a048b67cd0a8228"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "quangtvph25239@fpt.edu.vn",
+  "total_price": 152100,
+  "total_amount_paid": 152100,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T16:08:37.687Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T16:11:10.896Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9c951a54327f445e56ce4"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"Thai Binh\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1,
+      "name": " GIÀY V. A. N. S OLD SKOOL ĐỎ ĐUN"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 450000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-19T00:59:05.198Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-16T12:24:47.964Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9d9d1f8cea1e700651b02"
+  },
+  "address": "{\"name\":\"Mai tuan son\",\"phone\":\"0344272661\",\"address\":\"A\"}",
+  "user_id": {
+    "$oid": "65a8ccfed3aa641d51a82dfd"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày MLB BigBall Chunky Monogram"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 1 Mid ‘Shadow Fire"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "sonmtph23495@fpt.edu.vn",
+  "total_price": 1530000,
+  "total_amount_paid": 1530000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-19T02:09:24.155Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T06:56:45.567Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a813ca90b56a9fb17a2fcf"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày MLB BigBall Chunky Monogram"
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:52:10.685Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:20:47.348Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9d912f8cea1e700651a7d"
+  },
+  "address": "{\"name\":\"Mai tuan son\",\"phone\":\"0344272661\",\"address\":\"HA NOI\"}",
+  "user_id": {
+    "$oid": "65a8ccfed3aa641d51a82dfd"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày MLB BigBall Chunky Monogram"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 1 Mid ‘Shadow Fire"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "sonmtph23495@fpt.edu.vn",
+  "total_price": 720000,
+  "total_amount_paid": 720000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-19T02:06:57.149Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-14T17:27:49.313Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9e06343ff0b9283a04946"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"HA NOI\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 5,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 760500,
+  "total_amount_paid": 760500,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-19T02:37:23.739Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T02:39:18.128Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6d8c1c29515571cea743b"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:28:02.335Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T19:30:53.100Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6dcd7c29515571cea7627"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"thai binh\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 400000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:45:28.540Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:01:11.392Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6deb8c29515571cea7726"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:53:28.999Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:01:05.964Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e2c9c29515571cea7887"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"b\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c27d15efb8e3c75f8b0"
+      },
+      "color": "blue",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 5000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:10:49.739Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T15:14:25.767Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a813fc90b56a9fb17a3021"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"z\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "cancel",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 600000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:53:01.110Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:20:34.510Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a948442a048b67cd0a8070"
+  },
+  "address": "{\"name\":\"Trần Việt QuangGGGG\",\"phone\":\"0969718191\",\"address\":\"HA NOI\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1,
+      "name": " GIÀY V. A. N. S OLD SKOOL ĐỎ ĐUN"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "quangtvph25239@fpt.edu.vn",
+  "total_price": 602100,
+  "total_amount_paid": 602100,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T15:48:21.964Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T15:53:08.163Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a973e518f0aac8fd6f20ed"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1,
+      "name": " GIÀY V. A. N. S OLD SKOOL ĐỎ ĐUN"
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "email": "quangtvph25239@fpt.edu.vn",
+  "total_price": 450000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-18T18:54:30.440Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-16T12:24:09.185Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9d905f8cea1e700651a73"
+  },
+  "address": "{\"name\":\"Mai tuan son\",\"phone\":\"0344272661\",\"address\":\"HA NOI\"}",
+  "user_id": {
+    "$oid": "65a8ccfed3aa641d51a82dfd"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1,
+      "name": "Giày MLB BigBall Chunky Monogram"
+    },
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 3 Retro ‘Off Noir’"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 1 Mid ‘Shadow Fire"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "sonmtph23495@fpt.edu.vn",
+  "total_price": 720000,
+  "total_amount_paid": 720000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-19T02:06:33.774Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-31T05:41:23.523Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a801ead8b238827a0c8830"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:35:54.843Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:35:54.843Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80aad078aa3f574dfb0fc"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:13:17.631Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:13:17.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80bfb078aa3f574dfb1a6"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"z\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 600000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:18:52.108Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:18:52.108Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a814e890b56a9fb17a3081"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"thái bình\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "waiting",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 600000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:56:56.715Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:17:02.735Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a816b590b56a9fb17a317c"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"aaaaaa\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "waiting",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 600000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T18:04:37.625Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:10:11.556Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a1687840a20295d1eb9cb7"
+  },
+  "address": "{\"name\":\"a\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "#000000",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "total_price": 3510000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-12T16:27:36.766Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T12:28:25.039Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a4060c87bc0fd4865eccd5"
+  },
+  "address": "{\"name\":\"tran viet quangaa\",\"phone\":\"0969718192\",\"address\":\"aa\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "#e2e0e0",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-14T16:04:29.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T12:56:50.085Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a5663a96a9b55daa963cf0"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "#898484",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 60000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-15T17:07:07.209Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T17:07:07.209Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a805c0bad4f438973a0879"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:52:16.965Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:52:16.965Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a807f1bad4f438973a08e1"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 500000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-17T17:01:38.089Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:01:38.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a279efde94f009f044efae"
+  },
+  "address": "{\"name\":\"q\",\"phone\":\"0969718192\",\"address\":\"q\"}",
+  "user_id": {
+    "$oid": "65a25e9308a7da761be4f396"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6585dfb12c2316db2e819cb7"
+      },
+      "color": "#000000",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 3490000,
+  "total_amount_paid": 3490000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-13T11:54:23.925Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-13T11:54:23.925Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e007c29515571cea773b"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T19:59:04.472Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-16T20:01:04.708Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a6e179c29515571cea7831"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"aaaaa\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 5000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-16T20:05:14.127Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T16:08:48.374Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80588bad4f438973a0859"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:51:20.544Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:51:20.544Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80a2c078aa3f574dfb0a6"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:11:08.601Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:11:08.601Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9dd3943ff0b9283a04889"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6585dfb12c2316db2e819cb7"
+      },
+      "color": "black",
+      "size": "37",
+      "quantity": 1,
+      "name": "Giày Adidas UltraBoost 20 Lab ‘Black’ GZ5008"
+    }
+  ],
+  "status": "done",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 3141000,
+  "total_amount_paid": 3141000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-19T02:23:54.457Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T02:37:56.007Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8162e90b56a9fb17a3129"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850a1149a130aaf02756b"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "waiting",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 4000000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T18:02:22.866Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T18:14:14.753Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a8ce15627c349dc9c2e0ea"
+  },
+  "address": "{\"name\":\"Mai tuan son\",\"phone\":\"0344272661\",\"address\":\"Ha nôi \"}",
+  "user_id": {
+    "$oid": "65a8ccfed3aa641d51a82dfd"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3b79d15efb8e3c75f893"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 2,
+      "name": "Giày Adidas Prophere full trắng f1"
+    }
+  ],
+  "status": "pending",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "sonmtph23495@fpt.edu.vn",
+  "total_price": 1080000,
+  "total_amount_paid": 1080000,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T07:07:06.955Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T07:07:06.955Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a9d2ee43c10268467c5f68"
+  },
+  "address": "{\"name\":\"tran viet quang\",\"phone\":\"0969718192\",\"address\":\"A\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df68fc458b6a9a7a41e0"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Air Jordan 1 Mid ‘Shadow Fire"
+    }
+  ],
+  "status": "delivering",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "email": "admin@gmail.com",
+  "total_price": 360000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-19T01:39:59.859Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-16T14:21:54.782Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a4da9afacb368de55b1326"
+  },
+  "address": "{\"name\":\"tran viet quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "#f7efef",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "total_price": 249000,
+  "total_amount_paid": 249000,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-15T07:11:23.331Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-27T12:25:22.996Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a805d1bad4f438973a0889"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:52:33.727Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:52:33.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80b38078aa3f574dfb150"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:15:36.934Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:15:36.934Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a972ee18f0aac8fd6f2073"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"Hà Nội\"}",
+  "user_id": {
+    "$oid": "65a25a95aad7746a1db200b0"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 1,
+      "name": "Giày MLB Playball Mule Dia New York Yankees"
+    },
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 3,
+      "name": " GIÀY V. A. N. S OLD SKOOL ĐỎ ĐUN"
+    }
+  ],
+  "status": "delivering",
+  "sale_id": {
+    "$oid": "6555018adbb1621a26e79a3e"
+  },
+  "email": "quangtvph25239@fpt.edu.vn",
+  "total_price": 1806300,
+  "total_amount_paid": 1806300,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-01-18T18:50:24.865Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T18:58:55.958Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a800a7d8b238827a0c8769"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "sale_id": {
+    "$oid": "659a2ba5c277e84caf5a6df9"
+  },
+  "total_price": 224100,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:30:32.259Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:32:29.655Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80555bad4f438973a0839"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T16:50:30.532Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T16:50:30.532Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65a80ecdcdba825d48af276e"
+  },
+  "address": "{\"name\":\"Trần Việt Quang\",\"phone\":\"0969718192\",\"address\":\"a\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850a1149a130aaf02756b"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1,
+      "name": "Giày Adidas Prophere full trắng f1",
+      "total_price": 4000000
+    }
+  ],
+  "status": "pending",
+  "email": "vietquang1312002@gmail.com",
+  "total_price": 4000000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-01-17T17:30:54.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T17:30:54.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6609155d56b95e6d8e342d07"
+  },
+  "address": "{\"name\":\"hoang\",\"phone\":\"ddd\",\"address\":\"ddd\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531bf2a0d93829087edae"
+      },
+      "color": "đen",
+      "size": "21",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 168000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-03-31T07:48:45.344Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-31T08:01:30.088Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66091f3956b95e6d8e342e59"
+  },
+  "address": "{\"name\":\"hoang\",\"phone\":\"ddd\",\"address\":\"dd\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 5
+    }
+  ],
+  "status": "pending",
+  "total_price": 845000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-03-31T08:30:49.277Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-31T08:30:49.277Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660b64f40266fa0a11c56090"
+  },
+  "address": "{\"name\":\"hoang\",\"phone\":\"dsfd\",\"address\":\"fsadfsdf\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 5
+    }
+  ],
+  "status": "pending",
+  "total_price": 996000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T01:52:52.730Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T01:52:52.730Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660b65420266fa0a11c560ec"
+  },
+  "address": "{\"name\":\"hoang\",\"phone\":\"333\",\"address\":\"333\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531bf2a0d93829087edae"
+      },
+      "color": "đen",
+      "size": "21",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 268800,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T01:54:10.669Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T01:54:10.669Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bb584f628ee2a1bccd45e"
+  },
+  "address": "\"{\\\"name\\\":\\\"hoang111\\\",\\\"phone\\\":\\\"dfsd\\\",\\\"address\\\":\\\"fdsf\\\"}\"",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "42",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 0,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T07:36:36.837Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T07:36:36.837Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bb584f628ee2a1bccd45c"
+  },
+  "address": "\"{\\\"name\\\":\\\"hoang111\\\",\\\"phone\\\":\\\"dfsd\\\",\\\"address\\\":\\\"fdsf\\\"}\"",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "42",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 0,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T07:36:36.830Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T07:36:36.830Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bb6bff628ee2a1bccd512"
+  },
+  "address": "\"{\\\"name\\\":\\\"hoang111\\\",\\\"phone\\\":\\\"64464326\\\",\\\"address\\\":\\\"462346\\\"}\"",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 0,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T07:41:51.479Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T07:41:51.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bb6bff628ee2a1bccd510"
+  },
+  "address": "\"{\\\"name\\\":\\\"hoang111\\\",\\\"phone\\\":\\\"64464326\\\",\\\"address\\\":\\\"462346\\\"}\"",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 0,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T07:41:51.487Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T07:41:51.487Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bb6c0f628ee2a1bccd530"
+  },
+  "address": "\"{\\\"name\\\":\\\"hoang111\\\",\\\"phone\\\":\\\"64464326\\\",\\\"address\\\":\\\"462346\\\"}\"",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 0,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T07:41:52.899Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T07:41:52.899Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bce118146bd5de23f448a"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"55555555555\",\"address\":\"555555555\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 7090000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T09:21:21.967Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T09:21:21.967Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bce118146bd5de23f4488"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"55555555555\",\"address\":\"555555555\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "green",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 7090000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T09:21:22.520Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T09:21:22.520Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bcf538146bd5de23f44fe"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"2222222222\",\"address\":\"22222222222222\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "39",
+      "quantity": 2
+    }
+  ],
+  "status": "waiting",
+  "total_price": 8980000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T09:26:43.924Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T17:44:01.768Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bcfe48146bd5de23f4560"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"6\",\"address\":\"6\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 4490000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T09:29:08.841Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T17:42:29.779Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660bd1428146bd5de23f45c2"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"221\",\"address\":\"123123\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 7090000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-02T09:34:58.822Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T09:50:49.517Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660ecb3ccb2b7da5797a496a"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"hà nội\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 3
+    }
+  ],
+  "status": "waiting",
+  "total_price": 418320,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-04-04T15:46:05.045Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T09:50:21.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660f557d8c3dab114ecb5e72"
+  },
+  "address": "{\"name\":\"hoang111\",\"phone\":\"3333\",\"address\":\"333\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 4490000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-05T01:35:58.024Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T09:50:10.781Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "660f57448c3dab114ecb5f23"
+  },
+  "address": "{\"name\":\"hoang11133\",\"phone\":\"5555\",\"address\":\"555\"}",
+  "user_id": {
+    "$oid": "6607d234d80d11da1c1ccc31"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-05T01:43:32.861Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-05T01:44:13.784Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661018c3bd99177c797657f8"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"abc\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-05T15:29:07.943Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-05T16:02:30.773Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66101e51bd99177c79765957"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"nam định\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-05T15:52:49.346Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-05T16:01:18.076Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6611201cced242f24cae24e2"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"hanoi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 7090000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-06T10:12:44.762Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T10:13:35.390Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6612ab435fb809dfab7d30cb"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"TThai Binh\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "39",
+      "quantity": 3
+    },
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 3369000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-07T14:18:44.072Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-07T14:19:43.884Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6612ad535fb809dfab7d320c"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"Thai Binh\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 2
+    }
+  ],
+  "status": "done",
+  "total_price": 1138000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-07T14:27:31.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-07T14:29:45.318Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6612b0535fb809dfab7d3484"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng update\",\"phone\":\"0969718192\",\"address\":\"Ha Noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3aeed15efb8e3c75f87b"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-07T14:40:19.665Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T15:58:08.902Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661959372504fc9e13845331"
+  },
+  "address": "{\"name\":\"van\",\"phone\":\"11111111111111111\",\"address\":\"11asdasdasdasd\"}",
+  "user_id": {
+    "$oid": "661958112504fc9e13845175"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6619575e2504fc9e13844f6d"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 12
+    }
+  ],
+  "status": "done",
+  "total_price": 30000000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T15:54:31.379Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T15:55:38.117Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66195a042504fc9e138454b1"
+  },
+  "address": "{\"name\":\"van\",\"phone\":\"211111111111\",\"address\":\"1111111111\"}",
+  "user_id": {
+    "$oid": "661958112504fc9e13845175"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6619575e2504fc9e13844f6d"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 13
+    }
+  ],
+  "status": "cancel",
+  "total_price": 32500000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T15:57:56.619Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T15:58:55.144Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66195cc4431634351858574b"
+  },
+  "address": "{\"name\":\"van\",\"phone\":\"11111111111\",\"address\":\"1111111111\"}",
+  "user_id": {
+    "$oid": "661958112504fc9e13845175"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "660414b088e5a184599060d8"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 6
+    }
+  ],
+  "status": "cancel",
+  "total_price": 980000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T16:09:41.164Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T16:10:41.113Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66197278c64c7e326aa998c8"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"aaaaaaaa\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "66197061c64c7e326aa997b0"
+      },
+      "color": "trang",
+      "size": "41",
+      "quantity": 2
+    }
+  ],
+  "status": "done",
+  "total_price": 480000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T17:42:16.458Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T17:42:38.557Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661972d7c64c7e326aa999c6"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"aaaaaaaa\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "660414b088e5a184599060d8"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 5
+    }
+  ],
+  "status": "done",
+  "total_price": 150000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T17:43:51.383Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T17:44:15.589Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "661973b7c64c7e326aa99b22"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"aaaaaaaaaaaa\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "660414b088e5a184599060d8"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 830000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-12T17:47:35.286Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-12T17:48:21.080Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66228c2a3203602745073e62"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"aooooooo\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 720000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-04-19T15:22:20.245Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-19T15:22:20.245Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66228c4d3203602745073e72"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"aoooooooooooooooooooo\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-04-19T15:22:56.284Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-19T15:22:56.284Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6622912324affbfcf8b4a1a1"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"Ha Noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 4
+    },
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 7866000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-19T15:43:31.694Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-19T15:45:27.949Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6622a06c24affbfcf8b4a37c"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"Ha Noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "39",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-19T16:48:44.548Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-19T16:59:11.655Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6623ebe30cd0b4f226593f10"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"nam định\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 13
+    }
+  ],
+  "status": "cancel",
+  "total_price": 2197000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-04-20T16:23:00.064Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-29T16:12:16.187Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6623edcf0cd0b4f226593f7e"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"nam định\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "40",
+      "quantity": 13
+    }
+  ],
+  "status": "waiting",
+  "total_price": 2197000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-04-20T16:31:11.844Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-29T16:33:40.486Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6623f07e0cd0b4f226594130"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"adfasdf\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "39",
+      "quantity": 4
+    }
+  ],
+  "status": "waiting",
+  "total_price": 2000000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-20T16:42:38.440Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-25T08:08:02.438Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "662a0e016ad02595fb07bf27"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"Ha noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3a91d15efb8e3c75f867"
+      },
+      "color": "black",
+      "size": "38",
+      "quantity": 5
+    }
+  ],
+  "status": "done",
+  "total_price": 4880000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-04-25T08:02:10.371Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-25T08:08:50.612Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66326125eccc0bb36a7a5aaf"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"ha noi\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 2
+    },
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "40",
+      "quantity": 2
+    }
+  ],
+  "status": "waiting",
+  "total_price": 2880000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-01T15:35:02.291Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-01T15:35:48.326Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66326375eccc0bb36a7a5c61"
+  },
+  "address": "{\"name\":\"Trần Hữu Hưng\",\"phone\":\"0969718192\",\"address\":\"a99999AA999999999999\"}",
+  "user_id": {
+    "$oid": "655bae8378b90630d1909155"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "delivering",
+  "total_price": 800000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-05-01T15:44:53.209Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:53:51.779Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66331a11a648d7cb78f9fe7d"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"047272777\",\"address\":\"hanoi\"}",
+  "user_id": {
+    "$oid": "661bf60316ae79745f6e6a94"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "42",
+      "quantity": 5
+    },
+    {
+      "product_id": {
+        "$oid": "655e3c9ed15efb8e3c75f8dd"
+      },
+      "color": "black",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 1180000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-05-02T04:44:01.623Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T04:47:15.048Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66339b658d8069333e91dfca"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"13123123123\",\"address\":\"123123123\"}",
+  "user_id": {
+    "$oid": "661bf60316ae79745f6e6a94"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6585dfb12c2316db2e819cb7"
+      },
+      "color": "black",
+      "size": "37",
+      "quantity": 4
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "39",
+      "quantity": 5
+    }
+  ],
+  "status": "done",
+  "total_price": 13324500,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-05-02T13:55:50.106Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T13:56:38.219Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633ab8b84ce15bf17d2e65c"
+  },
+  "address": "{\"name\":\"Dương Xuân Văn\",\"phone\":\"0969718192\",\"address\":\"12111\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "65f59a1161d960921ad5ad61"
+      },
+      "color": "Trang",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "waiting",
+  "total_price": 1060000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T15:04:44.080Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:53:40.438Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633abd284ce15bf17d2e684"
+  },
+  "address": "{\"name\":\"Dương Xuân Văn\",\"phone\":\"0969718192\",\"address\":\"1312312\"}",
+  "user_id": {
+    "$oid": "65a25a86aad7746a1db200ab"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531c72a0d93829087edaf"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "65f59a1161d960921ad5ad61"
+      },
+      "color": "Trang",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 1180000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T15:05:54.617Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T15:17:14.716Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633e31998bb22a29b1d7809"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"0962324283\",\"address\":\"0962324283\"}",
+  "user_id": {
+    "$oid": "661bf60316ae79745f6e6a94"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 169000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T19:01:45.197Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:01:48.613Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633e33998bb22a29b1d787d"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"0962324283\",\"address\":\"0962324283\"}",
+  "user_id": {
+    "$oid": "661bf60316ae79745f6e6a94"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6633b4a984ce15bf17d2ef87"
+      },
+      "color": "denn",
+      "size": "231",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 123123,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T19:02:17.439Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:02:26.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633ef768a245f7494a5a3f7"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"111111111\",\"address\":\"1111111111111111\"}",
+  "user_id": {
+    "$oid": "6633ed2f8a245f7494a59b1a"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6633b4a984ce15bf17d2ef87"
+      },
+      "color": "denn",
+      "size": "231",
+      "quantity": 1
+    },
+    {
+      "product_id": {
+        "$oid": "6587df74fc458b6a9a7a41e1"
+      },
+      "color": "xam",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 312123,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T19:54:31.059Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T19:54:49.895Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633fbf59655eb90c6bcb70e"
+  },
+  "address": "{\"name\":\"Khách hàng\",\"phone\":\"123123\",\"address\":\"123123\"}",
+  "user_id": {
+    "$oid": "6633f7d49655eb90c6bcb370"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df84fc458b6a9a7a41e2"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 4061000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T20:47:49.585Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:47:49.585Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6633fdde9655eb90c6bcbaab"
+  },
+  "address": "{\"name\":\"Khách hàng\",\"phone\":\"123123\",\"address\":\"123123\"}",
+  "user_id": {
+    "$oid": "6633f7d49655eb90c6bcb370"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "660414b088e5a184599060d8"
+      },
+      "color": "den",
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "cancel",
+  "total_price": 50000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-02T20:55:58.534Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T20:56:11.907Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "663452e05175527992598878"
+  },
+  "address": "{\"name\":\"Xuân Văn\",\"phone\":\"111111111111111\",\"address\":\"111111111111111\"}",
+  "user_id": {
+    "$oid": "661bf60316ae79745f6e6a94"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6634510ea5351896a3e93a51"
+      },
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 1131111,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-03T02:58:41.177Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T02:58:41.177Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "663454c3517552799259893f"
+  },
+  "address": "{\"name\":\"Dương Xuân Văn\",\"phone\":\"111111111111111\",\"address\":\"111111111111111\"}",
+  "user_id": {
+    "$oid": "6633ea6e8a245f7494a59843"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6618175d1f263f153243e6bf"
+      },
+      "size": "41",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 119999,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-05-03T03:06:44.208Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T03:06:44.208Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "666036e3716f7449d5d91f4d"
+  },
+  "address": "{\"name\":\"Nguyễn Xuân Đạt\",\"phone\":\"0981285482\",\"address\":\"Hà Nội\"}",
+  "user_id": {
+    "$oid": "666033d8716f7449d5d91e95"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "6587df94fc458b6a9a7a41e3"
+      },
+      "color": "white",
+      "size": "37",
+      "quantity": 2
+    }
+  ],
+  "status": "pending",
+  "total_price": 478200,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-06-05T09:59:00.187Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-05T09:59:00.187Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "666f046199fbb4a4df0e5cbd"
+  },
+  "address": "{\"name\":\"thanhdo vu\",\"phone\":\"0566718362\",\"address\":\"hà nội 2\"}",
+  "user_id": {
+    "$oid": "666efe81a3cc8ee950d599d2"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "658531d62a0d93829087edb0"
+      },
+      "color": "black",
+      "size": "42",
+      "quantity": 2
+    }
+  ],
+  "status": "done",
+  "total_price": 220000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-06-16T15:27:30.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T15:28:06.196Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "666f060b14a9f4f72c5e7f7a"
+  },
+  "address": "{\"name\":\"thanhdo vu\",\"phone\":\"034782131\",\"address\":\"dewhdjkwehdjhwjed\"}",
+  "user_id": {
+    "$oid": "666efe81a3cc8ee950d599d2"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "655e3c27d15efb8e3c75f8b0"
+      },
+      "color": "blue",
+      "size": "40",
+      "quantity": 1
+    }
+  ],
+  "status": "pending",
+  "total_price": 520000,
+  "total_amount_paid": 0,
+  "payment_type": "bank",
+  "createdAt": {
+    "$date": "2024-06-16T15:34:35.978Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T15:34:35.978Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "666f071b14a9f4f72c5e8074"
+  },
+  "address": "{\"name\":\"thanhdo vu\",\"phone\":\"42545365656345\",\"address\":\"gtegtgtgtergtg\"}",
+  "user_id": {
+    "$oid": "666efe81a3cc8ee950d599d2"
+  },
+  "products": [
+    {
+      "product_id": {
+        "$oid": "659850ac149a130aaf02756c"
+      },
+      "color": "orange",
+      "size": "38",
+      "quantity": 1
+    }
+  ],
+  "status": "done",
+  "total_price": 7110000,
+  "total_amount_paid": 0,
+  "payment_type": "cash",
+  "createdAt": {
+    "$date": "2024-06-16T15:39:07.994Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-16T15:39:24.305Z"
+  },
+  "__v": 0
+}]

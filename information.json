@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "65548b07a855f574bc92fbed"
+  },
+  "title": "FiveComrades",
+  "email": "FiveComrades@gmail.com",
+  "phone": {
+    "$numberLong": "8774214258888"
+  },
+  "image": [
+    "https://res.cloudinary.com/dk89npq43/image/upload/v1714583199/by3qo9wuj14pyvsakmqq.jpg"
+  ],
+  "logo": [
+    "https://res.cloudinary.com/dk89npq43/image/upload/v1714583199/by3qo9wuj14pyvsakmqq.jpg"
+  ],
+  "address": " Hà Nội",
+  "nameStore": "FiveComrades",
+  "createdAt": {
+    "$date": "2023-11-15T09:10:31.201Z"
+  },
+  "__v": 0
+}]

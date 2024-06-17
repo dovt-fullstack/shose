@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button.ant-btn.css-dev-only-do-not-override-1xg9z9n.ant-btn-primary.ant-btn-sm {
+  background: #2563eb !important;
+}
+
+.ant-modal-content button.ant-btn.css-dev-only-do-not-override-1xg9z9n.ant-btn-primary {
+  background: #2563eb !important;
+}

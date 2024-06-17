@@ -1,0 +1,71 @@
+/* Header styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px; /* Tăng khoảng cách giữa danh sách và nội dung trang */
+}
+
+/* Position styles for grid items */
+.posXX {
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
+/* Editable content styles */
+.posXX[contentEditable='true'] {
+  cursor: text; /* Hiển thị con trỏ văn bản khi di chuột vào ô có thể chỉnh sửa */
+}
+
+/* Action buttons styles */
+.flex {
+  display: flex;
+}
+
+.space-x-4 {
+  margin-left: auto;
+}
+
+/* Button styles */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px; /* Điều chỉnh kích thước nút */
+  font-size: 14px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+/* Primary button styles */
+.bg-blue-500 {
+  background-color: #1890ff;
+  color: #fff;
+}
+
+/* Danger button styles */
+.bg-red-500 {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+/* Hover styles for buttons */
+button:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
