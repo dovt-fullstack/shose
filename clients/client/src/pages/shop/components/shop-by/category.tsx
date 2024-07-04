@@ -17,7 +17,7 @@ export const Category = ({ onFilterCategory }: CategoryProps) => {
   if (!data) return <p>No data</p>
   return (
     <div className='w-full'>
-      <NavTitle title='Shop by Category' icons={false} />
+      <NavTitle title='Thể loại sản phẩm' icons={false} />
       <div>
         <ul className='flex flex-col gap-4 text-sm lg:text-base text-[#767676]'>
           {data.data.map(({ _id, name }) => (

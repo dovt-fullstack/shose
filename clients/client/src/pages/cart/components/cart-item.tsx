@@ -12,9 +12,11 @@ interface CartItemProps {
 }
 export const CartItem = ({ index, data, handleRemove }: CartItemProps) => {
   const dispatch = useAppDispatch()
-
   const handleInCrease = (index: number) => {
+    
+    console.log("datadata",data)
     if (data.quantity >= data.maxQuantity) {
+
       message.error('Số lượng sản phẩm không đủ!')
       return
     }

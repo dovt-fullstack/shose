@@ -11,6 +11,7 @@ import Profile from '@/pages/profile/profile'
 import { Navigate, createBrowserRouter } from 'react-router-dom'
 import ChangePassword from '@/pages/profile/ChangePassword'
 import PaymentResult from '@/pages/order/ResultOrder'
+import { ForgotPasswordPage } from '@/pages/forgotPasswordPage/ForgotPasswordPage'
 
 const isAuthenticated = (): boolean => {
   const userString = localStorage.getItem('user_client')
@@ -87,5 +88,10 @@ export const routers = createBrowserRouter([
   {
     path: 'signup',
     element: <SignupPage />
+  },
+  {
+    path: 'forgotpasswordpage',
+    element: <ForgotPasswordPage />
   }
+  
 ])

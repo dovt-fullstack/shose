@@ -11,9 +11,10 @@ export const DetailPage = () => {
   const { id } = useParams()
   const [productList, setProductList] = useState<IProduct[]>([])
   const { isError, isFetching, data } = useGetProductByIdQuery(id as string)
-
+console.log("data",data)
   const { data: productData } = useGetProductsQuery()
 
+  
   useEffect(() => {
     if (productData && data) {
       setProductList(productData.products.filter((p) => p.categoryId == data?.product.categoryId))
@@ -40,7 +41,8 @@ export const DetailPage = () => {
           </div> */}
           <div className='h-full xl:col-span-3'>
             <img
-              className='object-cover w-full h-full'
+            style={{width:"500px",margin:'auto'}}
+              className='object-cover'
               src={data?.product?.image[0]}
               alt={
                 'https://sneakerdaily.vn/wp-content/uploads/2023/08/giay-new-balance-530-steel-grey-mr530ka.jpg.webp'
@@ -53,7 +55,8 @@ export const DetailPage = () => {
         </div>
         <hr />
         <div className='pt-10 mt-10'>
-          <h2 className='mb-4 text-3xl font-semibold'> Sản phẩm liên quan</h2>
+          <h2 className='mb-4 text-3xl font-semibold'> Sản phẩm liên quan </h2>
+
           <div className='grid w-full grid-cols-1 gap-10 md:grid-cols-2 lgl:grid-cols-4 xl:grid-cols-4'>
             {productList
               ?.slice(0, 8)

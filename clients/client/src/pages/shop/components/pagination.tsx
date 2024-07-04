@@ -34,12 +34,12 @@ export const Pagination = ({ itemsPerPage, products }: PaginationProps) => {
   const [itemStart, setItemStart] = useState(1)
 
   const endOffset = itemOffset + itemsPerPage
-  const currentItems = products.slice(itemOffset, endOffset)
-  const pageCount = Math.ceil(products.length / itemsPerPage)
+  const currentItems = products?.slice(itemOffset, endOffset)
+  const pageCount = Math?.ceil(products.length / itemsPerPage)
 
   // Invoke when user click to request another page.
   const handlePageClick = (event: any) => {
-    const newOffset = (event.selected * itemsPerPage) % products.length
+    const newOffset = (event.selected * itemsPerPage) % products?.length
     setItemOffset(newOffset)
     setItemStart(newOffset)
   }

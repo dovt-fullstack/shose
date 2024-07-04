@@ -66,19 +66,22 @@ export const Footer = () => {
           <FooterListTitle title='Shop' />
           <ul className='flex flex-col gap-2'>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Accesories
+            ADIDAS
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Clothes
+            NIKE
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Electronics
+            MLB
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Home appliances
+            VANS
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              New Arrivals
+            ASICS
+            </li>
+            <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
+            CONVERSE
             </li>
           </ul>
         </div>

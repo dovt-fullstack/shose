@@ -165,6 +165,13 @@ export const SigninPage = () => {
                   <span className='duration-300 hover:text-blue-600'>Sign up</span>
                 </Link>
               </p>
+              <p className='text-sm font-medium text-center font-titleFont'>
+                
+                <Link to='/forgotPasswordpage'>
+                  <span className='duration-300 hover:text-blue-600'>ForgotPasswordPage?</span>
+                </Link>
+              </p>
+
             </div>
           </div>
         </form>

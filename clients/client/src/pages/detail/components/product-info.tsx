@@ -2,17 +2,21 @@ import { IListQuantityRemain, IProduct } from '@/types'
 
 import { addProductToCart } from '@/store/slices/cart.slice'
 import { clsxm } from '@/utils'
-import { useAppDispatch } from '@/store'
+import { useAppDispatch, useAppSelector } from '@/store'
 import { useState } from 'react'
 import { message } from 'antd'
 
 interface ProductInfoProps {
   productInfo: IProduct
 }
+
 export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
   const [quantiry, setQuantiry] = useState(1)
-  const [sizeSelected, setSizeSelected] = useState<IListQuantityRemain | null>(productInfo.listQuantityRemain[0])
+    const { cart } = useAppSelector((state) => state.cart)
+console.log("cartêf",cart)
 
+  const [sizeSelected, setSizeSelected] = useState<IListQuantityRemain | null>(productInfo.listQuantityRemain[0])
+  // console.log("productInfo",sizeSelected.quantity)
   const dispatch = useAppDispatch()
   // giảm số lượng sản phẩm
   const decreaseQuantity = () => {
@@ -40,7 +44,24 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
       message.error('Bạn chưa chọn size sản phẩm!')
       return
     }
-
+  
+    // Tìm sản phẩm trong giỏ hàng có _id tương tự với sản phẩm đang xét
+    const cartItem = cart.find(item => item._id === productInfo._id)
+  
+    if (cartItem) {
+      // Nếu sản phẩm đã có trong giỏ hàng, kiểm tra xem số lượng đã chọn có vượt quá số lượng hiện có hay không
+      if (quantiry + cartItem.quantity > sizeSelected.quantity) {
+        message.error('Số lượng sản phẩm không đủ!')
+        return
+      }
+    } else {
+      // Nếu sản phẩm chưa có trong giỏ hàng, kiểm tra xem số lượng đã chọn có vượt quá số lượng hiện có hay không
+      if (quantiry > sizeSelected.quantity) {
+        message.error('Số lượng sản phẩm không đủ!')
+        return
+      }
+    }
+  
     const data = {
       _id: productInfo._id,
       nameProduct: productInfo.name,
@@ -51,7 +72,7 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
       image: productInfo.image[0],
       maxQuantity: productInfo.quantity
     }
-
+  
     dispatch(addProductToCart(data))
     message.success('Thêm sản phẩm vào giỏ hàng thành công!')
   }
@@ -74,19 +95,24 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
       <p className='text-sm'>Be the first to leave a review.</p>
       <p className='text-lg font-medium'>
         <span className='font-normal'>Size:</span>{' '}
-        {productInfo.listQuantityRemain.map((size, index) => (
-          <button
-            key={index}
-            disabled={size.quantity == 0}
-            className={clsxm('px-2 py-1 mx-1 border border-gray-300 rounded-md cursor-pointer', {
-              'bg-primeColor text-white': size === sizeSelected,
-              'opacity-[0.6] cursor-not-allowed': size.quantity == 0
-            })}
-            onClick={() => setSizeSelected(size)}
-          >
-            {size.nameSize}
-          </button>
-        ))}
+        {productInfo.listQuantityRemain
+  .slice() // Create a shallow copy to avoid mutating the original array
+  .sort((a, b) => a.nameSize.localeCompare(b.nameSize)) // Sort by nameSize in ascending order
+  .map((size, index) => (
+    <button
+      key={index}
+      disabled={size.quantity == 0}
+      className={clsxm('px-2 py-1 mx-1 border border-gray-300 rounded-md cursor-pointer', {
+        'bg-primeColor text-white': size === sizeSelected,
+        'opacity-[0.6] cursor-not-allowed': size.quantity == 0
+      })}
+      onClick={() => setSizeSelected(size)}
+    >
+      {size.nameSize}
+    </button>
+  ))}
+
+
       </p>
       <p className=''>Số lượng: {sizeSelected?.quantity}</p>
       <div className='flex items-center border-2 border-gray-300 rounded-md py-3 px-5 w-full max-w-[150px] justify-around'>
@@ -122,7 +148,7 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
         className='w-full py-4 text-lg text-white duration-300 bg-primeColor hover:bg-black font-titleFont'
         onClick={handleAddToCart}
       >
-        Add to Cart
+        Thêm Sản Phẩm
       </button>
       <p className='text-sm font-normal'>
         <span className='text-base font-medium'> Categories:</span> Spring collection, Streetwear, Women Tags: featured

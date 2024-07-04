@@ -13,6 +13,7 @@ export const Product = (props: {
   badge: boolean
   des: string
 }) => {
+
   return (
     <div className='relative flex flex-col flex-1 w-full h-full group'>
       <div className='relative flex-1 overflow-y-hidden shadow max-w-80 max-h-80'>

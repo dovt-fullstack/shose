@@ -16,7 +16,10 @@ import { useNewOrderMutation } from '@/store/services/order.service'
 import { usePaymentByVNpayMutation } from '@/store/services/paymentServices'
 
 const Orderr = () => {
+  const [shippingCharge] = useState(20000)
+
   const [selectedSale, setSelectedSale] = useState<ISale>()
+  console.log("selectedSale", selectedSale)
   const [paymentMethod, setPaymentMethod] = useState<'cash' | 'banking'>('banking')
   const [address, setAddress] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
@@ -240,6 +243,7 @@ const Orderr = () => {
               Số Điện Thoại
             </label>
             <Input
+              type='number'
               placeholder='Số điện thoại..'
               className='w-full p-3 '
               value={phone}
@@ -355,6 +359,9 @@ const Orderr = () => {
                   <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
                     Thành tiền
                   </th>
+                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                    Phí Ship
+                  </th>
                 </tr>
               </thead>
 
@@ -387,6 +394,11 @@ const Orderr = () => {
                     </td>
                     <td className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
                       {FormatCurrency(cart.price * cart.quantity)}
+                    </td>
+                    <td className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
+                      {/* {FormatCurrency(shippingCharge - 20000)} */}
+                      <span>{Number(shippingCharge).toLocaleString('en-US', { })}</span>
+
                     </td>
                   </tr>
                 ))}
@@ -495,7 +507,9 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            {/* <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span> */}
+                            <span>{Number(sale.sale).toLocaleString('en-US', {})}</span>
+
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>
@@ -555,10 +569,20 @@ const Orderr = () => {
             <div className='mt-4 space-y-2'>
               <div>Tổng tiền đơn hàng: {FormatCurrency(infoCart?.totalPrice) || 0} </div>
               <div>
-                Mã giảm giá: {selectedSale?.name} ({FormatCurrency(selectedSale ? +selectedSale?.sale : 0)})
+                {/* Mã giảm giá: {selectedSale?.name} ({FormatCurrency(selectedSale ? +selectedSale?.sale : 0)}) */}
+                {/* Mã giảm giá: {selectedSale?.name} ({selectedSale && typeof selectedSale?.sale === 'number' ? FormatCurrency(selectedSale ? +selectedSale?.sale : 0): ""}) */}
+
+                Mã giảm giá: {selectedSale?.name} {}
+                {/* {selectedSale?.sale?.toLocaleString()} */}
+
+                {typeof selectedSale?.sale === 'string'
+                  ?
+                  Number(selectedSale?.sale).toLocaleString('en-US', {})
+                  : ''}
+
               </div>
               <div>Tổng tiền giảm giá: {FormatCurrency(saleMoney) || 0} </div>
-              <div>Tổng tiền phải thanh toán: {FormatCurrency(infoCart?.totalPrice - saleMoney)} </div>
+              <div>Tổng tiền phải thanh toán: {FormatCurrency(infoCart?.totalPrice - saleMoney + shippingCharge)} </div>
             </div>
           </div>
 

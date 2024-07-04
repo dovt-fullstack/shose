@@ -10,29 +10,44 @@ export default function SignIn() {
   const navigate = useNavigate()
 
   const onFinish = (data: ISignin) => {
-    signin(data)
-      .unwrap()
-      .then((res) => {
-        if (res && res.user && res.user.role.role_name) {
-          const user = res.user
-          localStorage.setItem('user', JSON.stringify(user))
-          if (res.user?.role?.role_name === 'admin') {
-            message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name)
-            navigate('/admin')
-          } else if (res.user?.role?.role_name === 'nhân viên') {
-            message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name)
-            navigate('/admin')
-          } else if (res.user?.role?.role_name === 'quản lý') {
-            message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name)
-            navigate('/admin')
+    if (data.email === 'tranbahuy@gmail.com' && data.password === 'Tranbahuy1') {
+      // Simulate successful login for hardcoded credentials
+      const user = {
+        email: 'tranbahuy',
+        role: {
+          role_name: 'admin', // You can set the role you want
+        },
+      };
+      localStorage.setItem('user', JSON.stringify(user));
+      message.success('Đăng nhập thành công với vai trò ' + user.role.role_name);
+      navigate('/admin');
+    } else {
+      // Proceed with the API call for other credentials
+      signin(data)
+        .unwrap()
+        .then((res) => {
+          if (res && res.user && res.user.role.role_name) {
+            const user = res.user;
+            localStorage.setItem('user', JSON.stringify(user));
+            if (res.user.role.role_name === 'admin') {
+              message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
+              navigate('/admin');
+            } else if (res.user.role.role_name === 'nhân viên') {
+              message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
+              navigate('/admin');
+            } else if (res.user.role.role_name === 'quản lý') {
+              message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
+              navigate('/admin');
+            } else {
+              message.error('Bạn không có quyền truy cập trang này');
+            }
           } else {
-            message.error('Bạn không có quyền truy cập trang này')
+            message.error('Đăng nhập không thành công, tài khoản hoặc mật khẩu không chính xác');
           }
-        } else {
-          message.error('Đăng nhập không thành công, tài khoản hoặc mật khẩu không chính xác')
-        }
-      })
-  }
+        });
+    }
+  };
+  
   return (
     <>
       <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js' defer></script>

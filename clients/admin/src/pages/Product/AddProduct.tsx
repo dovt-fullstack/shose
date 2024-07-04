@@ -92,7 +92,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
           >
             <Input />
           </Form.Item>
-          <Form.Item
+          {/* <Form.Item
             label='Giá cũ'
             name='hot_sale'
             rules={[
@@ -104,10 +104,10 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
             ]}
           >
             <InputNumber />
-          </Form.Item>
+          </Form.Item> */}
 
           <Form.Item
-            label='Giá mới'
+            label='Giá Sản Phẩm'
             name='price'
             dependencies={['hot_sale']}
             rules={[
@@ -116,14 +116,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
                 validator: (_, value) =>
                   !value || !isNaN(Number(value)) ? Promise.resolve() : Promise.reject('Giá phải là một số')
               },
-              ({ getFieldValue }) => ({
-                validator(_, value) {
-                  if (!value || getFieldValue('hot_sale') >= value) {
-                    return Promise.resolve()
-                  }
-                  return Promise.reject('Giá mới không được cao hơn giá cũ!')
-                }
-              })
+
             ]}
           >
             <InputNumber />

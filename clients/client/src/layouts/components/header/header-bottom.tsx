@@ -67,7 +67,7 @@ export const HeaderBottom = () => {
             className='flex items-center gap-2 cursor-pointer h-14 text-primeColor'
           >
             <HiOutlineMenuAlt4 className='w-5 h-5' />
-            <p className='text-[14px] font-normal'>Shop by Category</p>
+            <p className='text-[14px] font-normal'>Hãng Sản Phẩm</p>
 
             {show && (
               <motion.ul
@@ -77,22 +77,22 @@ export const HeaderBottom = () => {
                 className='absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6'
               >
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Accessories
+                ADIDAS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Furniture
+                NIKE
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Electronics
+                MLB
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Clothes
+                VANS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Bags
+                ASICS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                  Home appliances
+                CONVERSE
                 </li>
               </motion.ul>
             )}

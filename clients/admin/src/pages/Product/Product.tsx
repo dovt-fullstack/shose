@@ -113,30 +113,30 @@ const Product = () => {
       key: 'categoryId',
       render: (name: string) => cateList?.data.find((item) => item._id === name)?.name
     },
-    {
-      title: 'colorHex',
-      dataIndex: 'listQuantityRemain',
-      key: 'listQuantityRemain',
-      render: (listQuantityRemain: IListQuantityRemain[]) => {
-        return (
-          <div className='whitespace-nowrap text-gray-700 py-4'>
-            <div className='items-center'>
-              <div className='flex flex-col gap-2'>
-                {listQuantityRemain.map((item, i) => (
-                  <span
-                    key={i}
-                    className='border border-gray-600 min-h-4 rounded-sm block text-xs lg:text-base md:text-xl'
-                    style={{
-                      backgroundColor: item.colorHex
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        )
-      }
-    },
+    // {
+    //   title: 'colorHex',
+    //   dataIndex: 'listQuantityRemain',
+    //   key: 'listQuantityRemain',
+    //   render: (listQuantityRemain: IListQuantityRemain[]) => {
+    //     return (
+    //       <div className='whitespace-nowrap text-gray-700 py-4'>
+    //         <div className='items-center'>
+    //           <div className='flex flex-col gap-2'>
+    //             {listQuantityRemain.map((item, i) => (
+    //               <span
+    //                 key={i}
+    //                 className='border border-gray-600 min-h-4 rounded-sm block text-xs lg:text-base md:text-xl'
+    //                 style={{
+    //                   backgroundColor: item.colorHex
+    //                 }}
+    //               />
+    //             ))}
+    //           </div>
+    //         </div>
+    //       </div>
+    //     )
+    //   }
+    // },
     {
       title: 'Màu',
       dataIndex: 'listQuantityRemain',
