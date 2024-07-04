@@ -8,7 +8,6 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { IProduct } from '@/types'
 import { motion } from 'framer-motion'
 import { useLogout } from '@/hooks'
-import { Category } from '@/pages/shop'
 
 export const HeaderBottom = () => {
   const { data: productData } = useGetProductsQuery()

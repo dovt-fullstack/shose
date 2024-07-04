@@ -20,7 +20,7 @@ export const ForgotPasswordPage = () => {
         setMessage(error.response.data.message);
       }
     };
-  
+    
     const handleSubmitResetPassword = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       try {
