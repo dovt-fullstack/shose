@@ -8,11 +8,13 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { IProduct } from '@/types'
 import { motion } from 'framer-motion'
 import { useLogout } from '@/hooks'
+import { Category } from '@/pages/shop'
 
-export const HeaderBottom = () => {
+export const HeaderBottom = ({onFilterCategory}:any) => {
   const { data: productData } = useGetProductsQuery()
-
   const [products, setProducts] = useState<IProduct[]>(productData?.products || [])
+
+  
 
   const {
     user: { user },
@@ -76,7 +78,7 @@ export const HeaderBottom = () => {
                 transition={{ duration: 0.5 }}
                 className='absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6'
               >
-                <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
+                {/* <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
                 ADIDAS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
@@ -93,7 +95,8 @@ export const HeaderBottom = () => {
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
                 CONVERSE
-                </li>
+                </li> */}
+                <Category  onFilterCategory={onFilterCategory}/>
               </motion.ul>
             )}
           </div>

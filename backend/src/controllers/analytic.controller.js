@@ -228,6 +228,7 @@ export const analyticController = {
   },
 
   analyticMonth: async (req, res) => {
+    console.log('1')
     try {
       /* order có trạng thái là pending theo tháng */
       const countOrderPendingMonth = await analyticController.countOrderByStatusAndMonth('pending');

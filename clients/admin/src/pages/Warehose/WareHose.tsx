@@ -13,6 +13,7 @@ export default function WareHose() {
   const { data: warehouseList } = useGetallWareHousesQuery()
   const [deleteWareHouse, wareHouseRes] = useDeleteWareHouseMutation()
 
+  console.log("warehouseList",warehouseList)
   useEffect(() => {
     setIsModalVisible(isModalVisible)
   }, [])

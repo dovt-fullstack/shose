@@ -7,7 +7,7 @@ import { useGetProductsQuery } from '@/store';
 const ShopPage = () => {
   const { data: productData } = useGetProductsQuery();
   const [products, setProducts] = useState<IProduct[]>(productData?.products || []);
-
+console.log("products",products)
   const [itemsPerPage, setItemsPerPage] = useState(12);
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
   
@@ -26,7 +26,7 @@ const ShopPage = () => {
 
   // Xử lý khi thay đổi bộ lọc thể loại sản phẩm
   const handleFilterCategory = (categoryId: string) => {
-    console.log("products",categoryId)
+    
 
     setSelectedCategory(categoryId);
     filterProducts(categoryId, selectedPriceRange);
