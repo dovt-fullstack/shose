@@ -13,6 +13,7 @@ import storage from 'redux-persist/lib/storage'
 import paymentApi from './services/paymentServices'
 import saleApi from './services/sale'
 import sizeApi from './services/sizeApi'
+import categoryReducer from './slices/CategorySilie'
 
 const rootReducer = combineReducers({
   [productApi.reducerPath]: productApiReducer,
@@ -23,7 +24,7 @@ const rootReducer = combineReducers({
   [saleApi.reducerPath]: saleApi.reducer,
   [sizeApi.reducerPath]: sizeApi.reducer,
 
-  // slice
+  category: categoryReducer,
   cart: cartReducer,
   user: authReducer
 })
@@ -42,7 +43,7 @@ const middleware = [
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['cart', 'user']
+  whitelist: ['cart', 'user','category']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

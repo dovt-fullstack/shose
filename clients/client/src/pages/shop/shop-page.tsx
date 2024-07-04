@@ -3,14 +3,16 @@ import { useEffect, useState } from 'react';
 import { Breadcrumbs } from '@/components';
 import { IProduct } from '@/types';
 import { useGetProductsQuery } from '@/store';
+import { useSelector } from 'react-redux';
 
 const ShopPage = () => {
   const { data: productData } = useGetProductsQuery();
   const [products, setProducts] = useState<IProduct[]>(productData?.products || []);
-console.log("products",products)
+console.log("products",productData)
   const [itemsPerPage, setItemsPerPage] = useState(12);
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
-  
+  const selectonfg = useSelector((state:any) => state.category.category)
+  console.log("selectonfg",selectonfg)
   const [selectedPriceRange, setSelectedPriceRange] = useState<{ priceStart: number, priceLow: number }>({
     priceStart: 0,
     priceLow: Number.MAX_SAFE_INTEGER // Sử dụng giá trị lớn nhất có thể để đảm bảo không có sản phẩm nào bị lọc ra vì giá
@@ -43,7 +45,7 @@ console.log("products",products)
     const { products } = productData;
 
     let filteredProducts = products;
-
+    console.log("categoryIdcategoryId",categoryId)
     if (categoryId) {
       filteredProducts = filteredProducts.filter(product => product.categoryId === categoryId);
     }

@@ -2,6 +2,8 @@ import { ImPlus } from 'react-icons/im'
 import { NavTitle } from '.'
 import { useGetCategoriesQuery } from '@/store'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setFillterCategory } from '@/store/slices/CategorySilie'
 
 interface CategoryProps {
   onFilterCategory: (category: string) => void
@@ -9,12 +11,21 @@ interface CategoryProps {
 
 export const Category = ({ onFilterCategory }: CategoryProps) => {
   const { isError, isFetching, data } = useGetCategoriesQuery()
+  const dispath = useDispatch()
 
+  const categoryId = (id:any) => {
+    dispath(setFillterCategory(id))
+    onFilterCategory(id)
+ 
+  }
   const [showSubCatOne, setShowSubCatOne] = useState<boolean>(false)
 
   if (isError) return <p>Error</p>
   if (isFetching) return <p>Loading...</p>
   if (!data) return <p>No data</p>
+
+  
+  
   return (
     <div className='w-full'>
       <NavTitle title='Thể loại sản phẩm' icons={false} />
@@ -24,7 +35,7 @@ export const Category = ({ onFilterCategory }: CategoryProps) => {
             <li
               key={_id}
               className='border-b-[1px] border-b-[#F0F0F0] pb-2 flex items-center justify-between cursor-pointer'
-              onClick={() => onFilterCategory(_id)}
+              onClick={() => categoryId(_id)}
             >
               {name}
               {true && (
