@@ -6,6 +6,7 @@ import { AiTwotoneDelete } from 'react-icons/ai'
 
 export default function Comment() {
   const { data: commentData, refetch } = useGetCommentQuery()
+  console.log("commentData",commentData)
   const [removeComment] = useRemoveCommentMutation()
   const handleSoftDelete = async (id: string) => {
     try {

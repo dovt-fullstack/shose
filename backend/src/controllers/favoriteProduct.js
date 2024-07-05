@@ -15,9 +15,9 @@ export const createFavoriteProduct = async (req, res) => {
     await User.findByIdAndUpdate(customerId, {
       $push: { favoriteProducts: productId },
     });
-    res.status(200).json({ message: "Đã thêm sản phẩm yêu thích thành công." });
+    res.status(200).json({ message: "Đã  yêu thích thành công." });
   } catch (error) {
-    res.status(500).json({ error: "Lỗi khi thêm sản phẩm yêu thích." });
+    res.status(500).json({ error: "Lỗi khi  yêu thích." });
   }
 };
 export const removeFavoriteProduct = async (req, res) => {

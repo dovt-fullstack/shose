@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-const CommentSchema = mongoose.Schema(
+
+const CommentSchema = new mongoose.Schema(
   {
     content: {
       type: String,
@@ -10,15 +11,29 @@ const CommentSchema = mongoose.Schema(
       required: true,
     },
     userId: {
-      type: mongoose.Types.ObjectId,
-      ref: "User",
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
       required: true,
     },
     productId: {
-      type: mongoose.Types.ObjectId,
-      ref: "Product",
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Product',
       required: true,
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+    image: {
+      type: String,
+      required: false,
+    },
+    // rating: {
+    //   type: Number,
+    //   required: true,
+    //   min: 0,
+    //   max: 5,
+    // },
   },
   { timestamps: true, versionKey: false }
 );

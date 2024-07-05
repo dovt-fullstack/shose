@@ -106,8 +106,9 @@ export const SigninPage = () => {
           </div>
         </div>
       </div>
-      <div className='w-full h-full lgl:w-1/2'>
+      <div className='w-full h-full'>
         <form
+        style={{marginLeft:"80px"}}
           className='w-full lgl:w-[450px] h-screen flex items-center justify-center'
           onSubmit={handleSubmit(onSubmit)}
         >

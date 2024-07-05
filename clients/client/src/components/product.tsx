@@ -49,7 +49,7 @@ export const Product = (props: {
           <h2 className='text-lg font-bold cursor-pointer text-primeColor line-clamp-1' title={props.productName}>
             {props.productName}
           </h2>
-          <p className='text-[#767676] text-[14px]'>{props.price.toLocaleString()}đ</p>
+          <p className='text-[#767676] text-[14px]'>{props.price}đ</p>
         </div>
         <div className='mt-auto'>
           <p className='text-[#767676] text-[14px]'>{props.color}</p>

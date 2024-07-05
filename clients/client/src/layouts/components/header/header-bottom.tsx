@@ -1,6 +1,6 @@
 import { FaCaretDown, FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
-import { useAppSelector, useGetProductsQuery } from '@/store'
+import { useAppSelector, useGetCategoriesQuery, useGetProductsQuery } from '@/store'
 import { useEffect, useRef, useState } from 'react'
 
 import { Flex } from '@/components'
@@ -8,13 +8,43 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { IProduct } from '@/types'
 import { motion } from 'framer-motion'
 import { useLogout } from '@/hooks'
+import { Category } from '@/pages/shop'
+import { useDispatch } from 'react-redux'
+import { setFillterCategory } from '@/store/slices/CategorySilie'
+const categoryDemo = [
+  {
+    _id: '1',
+    name: 'Category 1'
+  },
+  {
+    _id: '2',
+    name: 'Category 2'
+  },
+  {
+    _id: '3',
+    name: 'Category 3'
+  },
+  {
+    _id: '4',
+    name: 'Category 4'
+  },
+  {
+    _id: '5',
+    name: 'Category 5'
+  }
+]
 
 export const HeaderBottom = () => {
-  const { data: productData } = useGetProductsQuery()
-  const [products, setProducts] = useState<IProduct[]>(productData?.products || [])
-
   
 
+  const { data: productData } = useGetProductsQuery()
+  const [products, setProducts] = useState<IProduct[]>(productData?.products || [])
+  const dispath = useDispatch()
+
+
+  const handleFilterCateId = (id: any) => {
+    dispath(setFillterCategory(id))
+  }
   const {
     user: { user },
     cart
@@ -58,6 +88,12 @@ export const HeaderBottom = () => {
       setProducts(productData.products)
     }
   }, [productData])
+
+
+  const { isError, isFetching, data } = useGetCategoriesQuery()
+  if (isError) return <p>Error</p>
+  if (isFetching) return <p>Loading...</p>
+  if (!data) return <p>No data</p>
   return (
     <div className='w-full bg-[#F5F5F3] relative'>
       <div className='mx-auto max-w-container'>
@@ -77,25 +113,39 @@ export const HeaderBottom = () => {
                 transition={{ duration: 0.5 }}
                 className='absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6'
               >
-                <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                ADIDAS
+                {/* <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
+                  ADIDAS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                NIKE
+                  NIKE
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                MLB
+                  MLB
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                VANS
+                  VANS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                ASICS
+                  ASICS
                 </li>
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
-                CONVERSE
-                </li>
-                
+                  CONVERSE
+                </li> */}
+                {data.data.map((cate) => {
+                  return (
+                    <>
+                    <li
+                      key={cate._id}
+                      className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'
+                      onClick={() => handleFilterCateId(cate._id)}
+                    >
+                      {cate.name}
+                    
+                    </li>
+
+                    </>
+                  )
+                })}
               </motion.ul>
             )}
           </div>

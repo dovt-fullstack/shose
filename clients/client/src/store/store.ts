@@ -14,6 +14,7 @@ import paymentApi from './services/paymentServices'
 import saleApi from './services/sale'
 import sizeApi from './services/sizeApi'
 import categoryReducer from './slices/CategorySilie'
+import commentApi from './comments'
 
 const rootReducer = combineReducers({
   [productApi.reducerPath]: productApiReducer,
@@ -23,6 +24,7 @@ const rootReducer = combineReducers({
   [paymentApi.reducerPath]: paymentApi.reducer,
   [saleApi.reducerPath]: saleApi.reducer,
   [sizeApi.reducerPath]: sizeApi.reducer,
+  [commentApi.reducerPath]: commentApi.reducer,
 
   category: categoryReducer,
   cart: cartReducer,
@@ -36,7 +38,9 @@ const middleware = [
   orderApi.middleware,
   paymentApi.middleware,
   saleApi.middleware,
-  sizeApi.middleware
+  sizeApi.middleware,
+  commentApi.middleware,
+
 ]
 
 // lưu lại cart thôi

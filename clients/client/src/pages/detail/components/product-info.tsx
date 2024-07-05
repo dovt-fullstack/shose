@@ -13,7 +13,7 @@ interface ProductInfoProps {
 export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
   const [quantiry, setQuantiry] = useState(1)
     const { cart } = useAppSelector((state) => state.cart)
-console.log("cartêf",cart)
+
 
   const [sizeSelected, setSizeSelected] = useState<IListQuantityRemain | null>(productInfo.listQuantityRemain[0])
   // console.log("productInfo",sizeSelected.quantity)

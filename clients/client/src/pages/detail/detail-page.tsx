@@ -2,22 +2,82 @@ import { useParams } from 'react-router-dom'
 import { ProductInfo } from './components'
 
 import { Breadcrumbs } from '@/components'
-import { useGetProductByIdQuery, useGetProductsQuery } from '@/store'
+import { useAppSelector, useGetProductByIdQuery, useGetProductsQuery } from '@/store'
 import { IProduct } from '@/types'
 import { useEffect, useState } from 'react'
 import { Product } from '@/components/product'
+import { useGetCommentQuery } from '@/store/comments'
+import axios from 'axios'
+import { RootState } from '@reduxjs/toolkit/query'
 
 export const DetailPage = () => {
+  const { user } = useAppSelector((state: any) => state)
+  console.log("user", user.user.fullname)
+
   const { id } = useParams()
   const [productList, setProductList] = useState<IProduct[]>([])
   const { isError, isFetching, data } = useGetProductByIdQuery(id as string)
-console.log("data",data)
   const { data: productData } = useGetProductsQuery()
+  const [commentData, setCommentData] = useState<any[]>([])
+  const [idCategory, setIdCategory] = useState('')
+  const [selectedProductId, setSelectedProductId] = useState<string>('');
+  console.log("selectedProductId", selectedProductId)
 
+  const [rating, setRating] = useState<number>(1); // Điền giá trị rating mặc định
+
+  const [commentContent, setCommentContent] = useState<string>('');
+  const [commentImage, setCommentImage] = useState<string>('');
+
+  const productt = commentData.filter((items: any) => items.productId === selectedProductId)
+
+  console.log("productt", productt)
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios.get("http://localhost:8080/api/comments")
+      setCommentData(response.data)
+    }
+    fetchData()
+  }, [])
+
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
   
+    try {
+      const formData = new FormData();
+      formData.append('content', commentContent);
+      // formData.append('rating', rating);
+      formData.append('image', commentImage || ''); 
+      formData.append('fullname', user.user.fullname || '');
+      formData.append('userId', user.user._id || '');
+      formData.append('productId', selectedProductId);
+      console.log("formData",commentContent,commentImage,user.user.fullname, user.user._id,selectedProductId)
+  
+      const response = await axios.post('http://localhost:8080/api/comments', formData);
+  
+      console.log('Comment added successfully:', response.data);
+  
+      // Optionally, update commentData state or refetch comments here
+  
+    } catch (error) {
+      console.error('Error adding comment:', error);
+      // Add additional logging or set state to handle error display
+    }
+  };
+  
+
+
+  useEffect(() => {
+    if (productList.length > 0) {
+      setSelectedProductId(productList[0]._id); // Chọn sản phẩm đầu tiên mặc định
+    }
+  }, [productList]); // Sẽ chạy lại khi productList thay đổi
+
+
   useEffect(() => {
     if (productData && data) {
       setProductList(productData.products.filter((p) => p.categoryId == data?.product.categoryId))
+
     }
   }, [data, productData])
 
@@ -41,7 +101,7 @@ console.log("data",data)
           </div> */}
           <div className='h-full xl:col-span-3'>
             <img
-            style={{width:"500px",margin:'auto'}}
+              style={{ width: "500px", margin: 'auto' }}
               className='object-cover'
               src={data?.product?.image[0]}
               alt={
@@ -58,21 +118,89 @@ console.log("data",data)
           <h2 className='mb-4 text-3xl font-semibold'> Sản phẩm liên quan </h2>
 
           <div className='grid w-full grid-cols-1 gap-10 md:grid-cols-2 lgl:grid-cols-4 xl:grid-cols-4'>
-            {productList
-              ?.slice(0, 8)
-              ?.map((product) => (
-                <Product
-                  key={product._id}
-                  _id={product._id}
-                  img={product.image[0]}
-                  productName={product.name}
-                  price={product.price}
-                  color='Blank and White'
-                  badge={true}
-                  des={product.description}
-                />
-              ))}
+            {productList?.slice(0, 8)?.map((product) => (
+              <Product
+                key={product._id}
+                _id={product._id}
+                img={product.image[0]}
+                productName={product.name}
+                price={product.price}
+                color='Blank and White'
+                badge={true}
+                des={product.description}
+              />
+            ))}
+
+
           </div>
+
+          {/* Comment */}
+          <div>
+            <h3 className='mb-4 text-2xl font-semibold px-[80px] py-[20px]'> Comment </h3>
+            <div>
+              {productt.map((itm: any) => {
+                return (
+                  <>
+                    <div className='flex gap-3 m-[30px]'>
+                      <img className='w-8 h-8' src="https://cdn-icons-png.flaticon.com/128/560/560277.png" alt="" />
+
+
+                      <div style={{ background: "rgb(224 224 224)", padding: "10px", borderRadius: "10px" }} className='items-center'>
+                        <h1>{itm.fullname}</h1>
+                        <h1>{itm.content}</h1>
+                        {itm.image ? <div><img style={{ borderRadius: "20px" }} className='w-[250px] mt-[10px] ' src={itm.image} alt="" /></div> : ""}
+
+                      </div>
+                    </div>
+
+                  </>
+                )
+              })}
+            </div>
+
+            <div>
+              <form onSubmit={handleSubmit} className="max-w-sm p-6 bg-white shadow-md rounded-md">
+                <div className="mb-4">
+                  <label htmlFor="comment" className="block text-sm font-medium text-gray-700">
+                    Nhập bình luận
+                  </label>
+                  <input
+                    id="comment"
+                    type="text"
+                    value={commentContent}
+                    onChange={(e) => setCommentContent(e.target.value)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Nhập bình luận"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="image" className="block text-sm font-medium text-gray-700">
+                    Chọn hình ảnh (nếu có)
+                  </label>
+                  <input
+                    id="comment"
+                    type="text"
+                    value={commentImage}
+                    onChange={(e) => setCommentImage(e.target.value)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Nhập bình luận"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="inline-block w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Bình luận
+                </button>
+              </form>
+            </div>
+
+
+          </div>
+
+
         </div>
       </div>
     </div>

@@ -1,86 +1,167 @@
-import { BsCheckCircleFill } from "react-icons/bs"
-import { Link } from "react-router-dom"
-import { logoLight } from '@/assets/images'
+import React, { useState } from "react";
 import axios from "axios";
-import { useState } from "react";
+import useHistory from 'use-history'
 
-export const ForgotPasswordPage = () => {
 
-    const [email, setEmail] = useState('');
-    const [otp, setOtp] = useState('');
-    const [newPassword, setNewPassword] = useState('');
-    const [message, setMessage] = useState('');
-  
-    const handleSubmitEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      try {
-        const response = await axios.patch('http://localhost:8080/api/auth/forgotpassword/', { email });
-        setMessage(response.data.message);
-      } catch (error:any) {
-        setMessage(error.response.data.message);
+
+interface ForgotPasswordPageProps {}
+
+const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
+  const [email, setEmail] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
+  const [otp, setOtp] = useState("12345"); // Mặc định mã OTP là 12345
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+
+
+  console.log("",history)
+
+  const handleEmailSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      // Gọi API để kiểm tra email và gửi mã OTP
+      const response = await axios.get("http://localhost:8080/api/user");
+      const userExists = response.data.users.find((user: any) => user.email === email);
+
+      if (userExists) {
+        // Gửi yêu cầu đổi mật khẩu qua email (chỉ cần gửi yêu cầu, không cần thực hiện gửi mã OTP tại đây)
+        setEmailSent(true);
+      } else {
+        setError("Email không tồn tại trong hệ thống.");
       }
-    };
-    
-    const handleSubmitResetPassword = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      try {
-        const response = await axios.patch('http://localhost:8080/api/auth/resetpassword/', { email, otp, newPassword });
-        setMessage(response.data.message);
-        // Clear form fields after successful password reset
-        setEmail('');
-        setOtp('');
-        setNewPassword('');
-      } catch (error :any) {
-        setMessage(error.response.data.message);
+    } catch (error :any) {
+      if (error.response) {
+        console.error("Server error:", error.response.data);
+        setError("Có lỗi từ phía server xảy ra.");
+      } else if (error.request) {
+        console.error("Request error:", error.request);
+        setError("Yêu cầu không thành công.");
+      } else {
+        console.error("General error:", error.message);
+        setError("Có lỗi xảy ra khi kiểm tra email.");
       }
-    };
-  
-    console.log("email",email)
-    return(
-        <>
-        <div style={{display:'flex'}}>
+    }
+  };
 
-      <div>
-      <h2>Quên mật khẩu</h2>
-      <p>{message}</p>
+  const handleOtpSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-      {/* Form nhập email */}
-      {!otp && (
-        <form onSubmit={handleSubmitEmail}>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <button type="submit">Gửi yêu cầu</button>
-        </form>
-      )}
+    try {
+      // Gọi API để xác nhận mã OTP
+      const response = await axios.post(
+        "http://localhost:8080/api/auth/otpauthentication",
+        { email, otp }
+      );
 
-      {/* Form nhập OTP và mật khẩu mới */}
-      {otp && (
-        <form onSubmit={handleSubmitResetPassword}>
-          <label>Nhập mã OTP:</label>
-          <input
-            type="text"
-            value={otp}
-            onChange={(e) => setOtp(e.target.value)}
-            required
-          />
-          <label>Nhập mật khẩu mới:</label>
-          <input
-            type="password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-            minLength={6}
-            required
-          />
-          <button type="submit">Đổi mật khẩu</button>
-        </form>
-      )}
-    </div>
-    </div>
-        </>
-    )
-}
+      if (response.data.message === "Mã OTP xác nhận thành công.") {
+        // Hiển thị form để nhập mật khẩu mới
+        console.log("OTP authenticated successfully!");
+        // Chuyển sang form nhập mật khẩu mới
+        // Ví dụ: history.push('/reset-password');
+      }
+    } catch (error) {
+      setError("Mã xác nhận không hợp lệ hoặc có lỗi xảy ra.");
+    }
+  };
+
+  // const url = useHistory()
+
+  const handlePasswordChange = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      
+      // Gọi API để đổi mật khẩu
+      const response = await axios.patch(
+        "http://localhost:8080/api/auth/resetpassword",
+        { email, newPassword, confirmPassword }
+      );
+
+      if (response.data.message === "Mật khẩu đã được đổi thành công.") {
+        alert("Đã Đổi Pass Thành Công")
+        // Xử lý khi đổi mật khẩu thành công
+        console.log("Password changed successfully!");
+        // url.push('/')
+        
+        // Điều hướng tới trang thông báo đổi mật khẩu thành công
+        // Ví dụ: history.push('/password-changed');
+      }
+    } catch (error) {
+      setError("Có lỗi xảy ra khi đổi mật khẩu.");
+    }
+  };
+
+  return (
+    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+    {!emailSent ? (
+      <form onSubmit={handleEmailSubmit} className="space-y-4">
+        <label className="block text-sm font-medium text-gray-700">Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+        />
+        <button
+          type="submit"
+          className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          Gửi
+        </button>
+      </form>
+    ) : (
+      // <form onSubmit={handleOtpSubmit} className="space-y-4">
+      //   <label className="block text-sm font-medium text-gray-700">Nhập mã OTP:</label>
+      //   <input
+      //     type="text"
+      //     value={otp}
+      //     onChange={(e) => setOtp(e.target.value)}
+      //     required
+      //     className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+      //   />
+      //   <button
+      //     type="submit"
+      //     className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      //   >
+      //     Xác nhận OTP
+      //   </button>
+      // </form>
+      <></>
+    )}
+
+    {emailSent && (
+      <form onSubmit={handlePasswordChange} className="space-y-4 mt-4">
+        <label className="block text-sm font-medium text-gray-700">Nhập mật khẩu mới:</label>
+        <input
+          type="password"
+          value={newPassword}
+          onChange={(e) => setNewPassword(e.target.value)}
+          required
+          className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+        />
+        <label className="block text-sm font-medium text-gray-700">Xác nhận mật khẩu:</label>
+        <input
+          type="password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
+          className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+        />
+        <button
+          type="submit"
+          className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          Đổi mật khẩu
+        </button>
+      </form>
+    )}
+
+    {error && <p className="text-red-500">{error}</p>}
+  </div>
+  );
+};
+
+export default ForgotPasswordPage;
