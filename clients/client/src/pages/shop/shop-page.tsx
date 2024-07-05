@@ -79,6 +79,9 @@ const ShopPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
   const selectonfg = useSelector((state: any) => state.category.category)
   console.log('selectonfg', selectonfg)
+
+
+  
   const [selectedPriceRange, setSelectedPriceRange] = useState<{ priceStart: number; priceLow: number }>({
     priceStart: 0,
     priceLow: Number.MAX_SAFE_INTEGER // Sử dụng giá trị lớn nhất có thể để đảm bảo không có sản phẩm nào bị lọc ra vì giá

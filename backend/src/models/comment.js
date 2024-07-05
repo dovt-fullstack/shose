@@ -4,21 +4,21 @@ const CommentSchema = new mongoose.Schema(
   {
     content: {
       type: String,
-      required: true,
+      required: false,
     },
     fullname: {
       type: String,
-      required: true,
+      required: false,
     },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
-      required: true,
+      required: false,
     },
     productId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Product',
-      required: true,
+      required: false,
     },
     createdAt: {
       type: Date,
@@ -28,14 +28,16 @@ const CommentSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    // rating: {
-    //   type: Number,
-    //   required: true,
-    //   min: 0,
-    //   max: 5,
-    // },
+    rating: {
+      // type: Number,
+      // required: true,
+      // min: 0,
+      // max: 5,
+      type: String,
+      required: false,
+    },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: false, versionKey: false }
 );
 
 export default mongoose.model("Comment", CommentSchema);

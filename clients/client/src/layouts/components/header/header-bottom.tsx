@@ -43,6 +43,7 @@ export const HeaderBottom = () => {
 
 
   const handleFilterCateId = (id: any) => {
+
     dispath(setFillterCategory(id))
   }
   const {

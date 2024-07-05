@@ -21,9 +21,10 @@ export const DetailPage = () => {
   const [commentData, setCommentData] = useState<any[]>([])
   const [idCategory, setIdCategory] = useState('')
   const [selectedProductId, setSelectedProductId] = useState<string>('');
+  const [rating, setRating] = useState<string>('gdsrgdrg'); // Giá trị mặc định cho rating là 5
+
   console.log("selectedProductId", selectedProductId)
 
-  const [rating, setRating] = useState<number>(1); // Điền giá trị rating mặc định
 
   const [commentContent, setCommentContent] = useState<string>('');
   const [commentImage, setCommentImage] = useState<string>('');
@@ -44,27 +45,30 @@ export const DetailPage = () => {
     event.preventDefault();
   
     try {
-      const formData = new FormData();
-      formData.append('content', commentContent);
-      // formData.append('rating', rating);
-      formData.append('image', commentImage || ''); 
-      formData.append('fullname', user.user.fullname || '');
-      formData.append('userId', user.user._id || '');
-      formData.append('productId', selectedProductId);
-      console.log("formData",commentContent,commentImage,user.user.fullname, user.user._id,selectedProductId)
+      const requestData = {
+        content: commentContent,
+        rating: rating || "",
+        image: commentImage || '',
+        fullname: user.user.fullname || '',
+        userId: user.user._id || '',
+        productId: selectedProductId
+      };
   
-      const response = await axios.post('http://localhost:8080/api/comments', formData);
+      // Gọi API sử dụng axios
+      const response = await axios.post('http://localhost:8080/api/comments', requestData);
   
       console.log('Comment added successfully:', response.data);
   
-      // Optionally, update commentData state or refetch comments here
+      // Có thể cập nhật trạng thái commentData hoặc fetch lại comments ở đây nếu cần
   
     } catch (error) {
       console.error('Error adding comment:', error);
-      // Add additional logging or set state to handle error display
+      // Xử lý lỗi thêm comment ở đây, ví dụ như cập nhật state để hiển thị lỗi
     }
   };
   
+  
+
 
 
   useEffect(() => {

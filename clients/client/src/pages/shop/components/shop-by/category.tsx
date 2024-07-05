@@ -36,6 +36,7 @@ export const Category = ({ onFilterCategory }: CategoryProps) => {
   const dispath = useDispatch()
 
   const categoryId = (id: any) => {
+
     dispath(setFillterCategory(id))
     // onFilterCategory(id)
   }

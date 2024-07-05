@@ -47,7 +47,7 @@ const middleware = [
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['cart', 'user','category']
+  whitelist: ['cart', 'user']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
