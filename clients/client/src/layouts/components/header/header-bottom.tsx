@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 import { useLogout } from '@/hooks'
 import { Category } from '@/pages/shop'
 import { useDispatch } from 'react-redux'
-import { setFillterCategory } from '@/store/slices/CategorySilie'
+import { setFilterCategory } from '@/store/slices/CategorySilie'
 const categoryDemo = [
   {
     _id: '1',
@@ -44,7 +44,7 @@ export const HeaderBottom = () => {
 
   const handleFilterCateId = (id: any) => {
 
-    dispath(setFillterCategory(id))
+    dispath(setFilterCategory(id))
   }
   const {
     user: { user },

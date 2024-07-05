@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import { Breadcrumbs } from '@/components'
 import { IProduct } from '@/types'
 import { useGetProductsQuery } from '@/store'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { clearCategory } from '@/store/slices/CategorySilie'
 
 const ShopPage = () => {
   const { data: productData } = useGetProductsQuery()
@@ -73,6 +74,8 @@ const ShopPage = () => {
     }
   ]
 
+  const dispatch = useDispatch();
+
   const [originalProducts, setOriginalProducts] = useState<any[]>(productData?.products || productDemo)
   const [products, setProducts] = useState<any[]>(productData?.products || productDemo)
   const [itemsPerPage, setItemsPerPage] = useState(12)
@@ -86,6 +89,8 @@ const ShopPage = () => {
     priceStart: 0,
     priceLow: Number.MAX_SAFE_INTEGER // Sử dụng giá trị lớn nhất có thể để đảm bảo không có sản phẩm nào bị lọc ra vì giá
   })
+
+
 
   // Cập nhật products từ productData khi productData thay đổi
   useEffect(() => {
@@ -128,6 +133,13 @@ const ShopPage = () => {
     filterProducts(selectonfg, selectedPriceRange)
   }, [selectonfg])
 
+
+  useEffect(() => {
+    return () => {
+      // Dispatch action to clear category state when component unmounts
+      dispatch(clearCategory());
+    };
+  }, [dispatch]);
   // Callback để cập nhật số sản phẩm trên mỗi trang từ ProductBanner
   const itemsPerPageFromBanner = (itemsPerPage: number) => {
     setItemsPerPage(itemsPerPage)

@@ -1,26 +1,25 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-
-import { ICart } from '@/types/cart.type'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 export type InitialStateType = {
-  cart: ICart[]
-}
+  category: string;
+};
 
-const CategorySilie = createSlice({
+const initialState: InitialStateType = {
+  category: ''
+};
+
+const categorySlice = createSlice({
   name: 'category',
-  initialState: {
-    category: ''
-  } as any,
+  initialState,
   reducers: {
-    setFillterCategory: (state, action: PayloadAction<any>) => {
-      // kiểm tra sản phẩm đã có trong giỏ hàng chưa nếu có thì tăng số lượng lên
-        state.category = action.payload
+    setFilterCategory: (state, action: PayloadAction<string>) => {
+      state.category = action.payload;
     },
+    clearCategory: (state) => {
+      state.category = '';
+    }
   }
-})
+});
 
-export const {
-    setFillterCategory,
-} = CategorySilie.actions
-const categoryReducer = CategorySilie.reducer
-export default categoryReducer
+export const { setFilterCategory, clearCategory } = categorySlice.actions;
+export default categorySlice.reducer;

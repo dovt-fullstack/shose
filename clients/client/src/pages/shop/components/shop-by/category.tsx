@@ -3,7 +3,7 @@ import { NavTitle } from '.'
 import { useGetCategoriesQuery } from '@/store'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { setFillterCategory } from '@/store/slices/CategorySilie'
+import { setFilterCategory } from '@/store/slices/CategorySilie'
 const categoryDemo = [
   {
     _id: '1',
@@ -37,7 +37,7 @@ export const Category = ({ onFilterCategory }: CategoryProps) => {
 
   const categoryId = (id: any) => {
 
-    dispath(setFillterCategory(id))
+    dispath(setFilterCategory(id))
     // onFilterCategory(id)
   }
   const [showSubCatOne, setShowSubCatOne] = useState<boolean>(false)
