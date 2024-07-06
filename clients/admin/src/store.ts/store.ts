@@ -24,7 +24,7 @@ const persistConfig = {
   version: 1,
   whitelist: ['users']
 }
-
+// sao no lai bi khi f5 day ban nos thee b a cu thi thoang lai bij ko hieu sao ao vl
 const rootReducer = combineReducers({
   [authApi.reducerPath]: authApi.reducer,
   [categoryApi.reducerPath]: categoryApi.reducer,

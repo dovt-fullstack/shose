@@ -6,6 +6,7 @@ import { IWareHose } from '@/interfaces'
 import { ICategory } from '@/interfaces/category'
 import { IProduct } from '@/interfaces/product'
 import { Button, Col, ColorPicker, Form, Input, InputNumber, Select, Space, notification } from 'antd'
+import axios from 'axios'
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { FaMinus } from 'react-icons/fa6'
 import { useNavigate } from 'react-router-dom'
@@ -20,9 +21,15 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
   const [addproduct, addproductRes] = useAddProductMutation()
   const { data: category } = useGetCategorysQuery()
   const { data: wareHouseList } = useGetallWareHousesQuery()
-
+  const [newWarehouse,setNew]=useState([])
   const [img, setImg] = useState<string[]>([])
-
+  useEffect(()=>{
+  const fetchData = async()=>{
+  const {data} = await axios.get('http://localhost:8080/api/warehose')
+  console.log(data,'day')
+  }
+  fetchData()
+  },[])
   const { TextArea } = Input
   const [form] = Form.useForm()
 
@@ -32,7 +39,9 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
       notification.success({
         message: 'Success',
         description: 'Thêm sản phẩm thành công'
+        
       })
+      alert("thêm thành công ")
     }
   }, [addproductRes.isSuccess, navigate])
 
@@ -178,7 +187,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
             initialValue={[]}
           >
             {(fields, { add, remove }, { errors }) => (
-              <div style={{ display: 'flex', rowGap: 16, flexDirection: 'column' }}>
+              <div style={{ display: 'flex', rowGap: 16, flexDirection: 'column', marginLeft:"80px" }}>
                 {fields.map(({ key, name, ...restField }) => (
                   <Space
                     className='space'
@@ -186,9 +195,9 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
                     style={{ display: 'flex', marginBottom: 8, alignItems: 'center' }}
                     align='baseline'
                   >
-                    <Form.Item className='colorFormItem' {...restField} name={[name, 'colorHex']}>
+                    {/* <Form.Item className='colorFormItem' {...restField} name={[name, 'colorHex']}>
                       <ColorPicker defaultValue={'fff'} showText={(color) => color.toHexString()} format='hex' />
-                    </Form.Item>
+                    </Form.Item> */}
                     <Form.Item
                       {...restField}
                       name={[name, 'nameColor']}
@@ -219,7 +228,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
                   </Space>
                 ))}
 
-                <Button type='dashed' onClick={() => add()} block>
+                <Button type='dashed' onClick={() => add} block>
                   + Thêm biến thể
                 </Button>
                 <Form.ErrorList className='text-red-500' errors={errors} />

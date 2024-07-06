@@ -33,11 +33,10 @@ export const Footer = () => {
     <div className='w-full bg-[#F5F5F3] py-20'>
       <div className='max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10'>
         <div className='col-span-2'>
-          <FooterListTitle title=' More about Orebi Shop' />
+          <FooterListTitle title=' Tìm hiểu thêm về Orebi Shop' />
           <div className='flex flex-col gap-6'>
             <p className='text-base w-full xl:w-[80%]'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint ab ullam, numquam nesciunt in.
-            </p>
+            Orebi Shop là Một Công ty về các loại sản phẩm giày Snaker, luôn ra mắt những mẫu mới, phụ vụ khách hàng tận tâm            </p>
             <ul className='flex items-center gap-2'>
               <a href='https://www.youtube.com/@reactjsBD' target='_blank' rel='noreferrer'>
                 <li className='w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300'>
@@ -63,7 +62,7 @@ export const Footer = () => {
           </div>
         </div>
         <div>
-          <FooterListTitle title='Shop' />
+          <FooterListTitle title='Cửa hàng' />
           <ul className='flex flex-col gap-2'>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
             ADIDAS
@@ -86,29 +85,29 @@ export const Footer = () => {
           </ul>
         </div>
         <div>
-          <FooterListTitle title='Your account' />
+          <FooterListTitle title='Tài khoản của bạn' />
           <ul className='flex flex-col gap-2'>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Profile
+              Thông Tin
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Orders
+              Đặt hàng 
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Addresses
+              Địa chỉ
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Account Details
+            Chi tiết tài khoản
             </li>
             <li className='font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300'>
-              Payment Options
+            Các lựa chọn thanh toán
             </li>
           </ul>
         </div>
         <div className='col-span-2 flex flex-col items-center w-full px-4'>
-          <FooterListTitle title='Subscribe to our newsletter.' />
+          <FooterListTitle title='Theo dõi bản tin của chúng tôi.' />
           <div className='w-full'>
-            <p className='text-center mb-4'>A at pellentesque et mattis porta enim elementum.</p>
+            <p className='text-center mb-4'>Thông tin về Snaker sẽ được cập nhật mỗi ngày .</p>
             {subscription ? (
               <motion.p
                 initial={{ x: 20, opacity: 0 }}
@@ -126,7 +125,7 @@ export const Footer = () => {
                     value={emailInfo}
                     className='w-full h-12 border-b border-gray-400 bg-transparent px-4 text-primeColor text-lg placeholder:text-base outline-none'
                     type='text'
-                    placeholder='Insert your email ...*'
+                    placeholder='Nhập địa chỉ email ...*'
                   />
                   {errMsg && (
                     <p className='text-red-600 text-sm font-semibold font-titleFont text-center animate-bounce mt-2'>
@@ -138,7 +137,7 @@ export const Footer = () => {
                   onClick={handleSubscription}
                   className='bg-white text-lightText w-[30%] h-10 hover:bg-black hover:text-white duration-300 text-base tracking-wide'
                 >
-                  Subscribe
+                  Đăng ký
                 </button>
               </div>
             )}

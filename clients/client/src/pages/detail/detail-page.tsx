@@ -21,13 +21,14 @@ export const DetailPage = () => {
   const [commentData, setCommentData] = useState<any[]>([])
   const [idCategory, setIdCategory] = useState('')
   const [selectedProductId, setSelectedProductId] = useState<string>('');
-  const [rating, setRating] = useState<string>('gdsrgdrg'); // Giá trị mặc định cho rating là 5
+  const [rating, setRating] = useState<any>(); // Giá trị mặc định cho rating là 5
 
   console.log("selectedProductId", selectedProductId)
 
 
   const [commentContent, setCommentContent] = useState<string>('');
   const [commentImage, setCommentImage] = useState<string>('');
+
 
   const productt = commentData.filter((items: any) => items.productId === selectedProductId)
 
@@ -43,31 +44,31 @@ export const DetailPage = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-  
+
     try {
       const requestData = {
         content: commentContent,
-        rating: rating || "",
+        rating: rating,
         image: commentImage || '',
         fullname: user.user.fullname || '',
         userId: user.user._id || '',
         productId: selectedProductId
       };
-  
+
       // Gọi API sử dụng axios
       const response = await axios.post('http://localhost:8080/api/comments', requestData);
-  
+      alert("Đã Thêm Bình Luận")
       console.log('Comment added successfully:', response.data);
-  
+
       // Có thể cập nhật trạng thái commentData hoặc fetch lại comments ở đây nếu cần
-  
+
     } catch (error) {
       console.error('Error adding comment:', error);
       // Xử lý lỗi thêm comment ở đây, ví dụ như cập nhật state để hiển thị lỗi
     }
   };
-  
-  
+
+
 
 
 
@@ -152,6 +153,10 @@ export const DetailPage = () => {
                       <div style={{ background: "rgb(224 224 224)", padding: "10px", borderRadius: "10px" }} className='items-center'>
                         <h1>{itm.fullname}</h1>
                         <h1>{itm.content}</h1>
+                        <div className='flex' style={{ alignItems: "center", gap: "5px" }}>
+                          <h1>Đánh Giá: {itm.rating} </h1>
+                          <img style={{ width: "15px", height: "15px" }} src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="" />
+                        </div>
                         {itm.image ? <div><img style={{ borderRadius: "20px" }} className='w-[250px] mt-[10px] ' src={itm.image} alt="" /></div> : ""}
 
                       </div>
@@ -187,6 +192,23 @@ export const DetailPage = () => {
                     type="text"
                     value={commentImage}
                     onChange={(e) => setCommentImage(e.target.value)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Nhập bình luận"
+                    
+                  />
+                </div>
+
+                <div className="mb-4">
+                  <label htmlFor="image" className="block text-sm font-medium text-gray-700">
+                    Đánh Giá
+                  </label>
+                  <input
+                    id="comment"
+                    type="Number"
+                    value={rating}
+                    min="1"
+                    max="5"
+                    onChange={(e) => setRating(e.target.value)}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     placeholder="Nhập bình luận"
                     required

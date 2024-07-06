@@ -113,23 +113,23 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
         </button>
       </form>
     ) : (
-      // <form onSubmit={handleOtpSubmit} className="space-y-4">
-      //   <label className="block text-sm font-medium text-gray-700">Nhập mã OTP:</label>
-      //   <input
-      //     type="text"
-      //     value={otp}
-      //     onChange={(e) => setOtp(e.target.value)}
-      //     required
-      //     className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
-      //   />
-      //   <button
-      //     type="submit"
-      //     className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      //   >
-      //     Xác nhận OTP
-      //   </button>
-      // </form>
-      <></>
+      <form onSubmit={handleOtpSubmit} className="space-y-4">
+        <label className="block text-sm font-medium text-gray-700">Nhập mã OTP:</label>
+        <input
+          type="text"
+          value={otp}
+          onChange={(e) => setOtp(e.target.value)}
+          required
+          className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+        />
+        <button
+          type="submit"
+          className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          Xác nhận OTP
+        </button>
+      </form>
+      
     )}
 
     {emailSent && (
@@ -165,3 +165,110 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
 };
 
 export default ForgotPasswordPage;
+
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// const ForgotPasswordPage = () => {
+//   const [email, setEmail] = useState('');
+//   const [otp, setOtp] = useState('');
+//   const [newPassword, setNewPassword] = useState('');
+//   const [message, setMessage] = useState('');
+//   const [step, setStep] = useState(1); // Step 1: Enter email, Step 2: Enter OTP, Step 3: Enter new password
+
+//   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setEmail(e.target.value);
+//   };
+
+//   const handleOtpChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setOtp(e.target.value);
+//   };
+
+//   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setNewPassword(e.target.value);
+//   };
+
+//   const handleSendOTP = async () => {
+//     try {
+//       const response = await axios.post('http://localhost:8080/api/auth/forgotpassword', { email });
+//       setMessage(response.data.message);
+//       setStep(2); // Move to step 2: Enter OTP
+//     } catch (error :any) {
+//       setMessage(error.response?.data?.message || 'Đã xảy ra lỗi, vui lòng thử lại.');
+//     }
+//   };
+
+//   const handleVerifyOTP = async () => {
+//     try {
+//       const response = await axios.post('http://localhost:8080/api/auth/otpauthentication', { email, otp });
+//       setMessage(response.data.message);
+//       if (response.data.message === 'Mã OTP xác nhận thành công.') {
+//         setStep(3); // Move to step 3: Enter new password
+//       }
+//     } catch (error:any) {
+//       setMessage(error.response?.data?.message || 'Đã xảy ra lỗi, vui lòng thử lại.');
+//     }
+//   };
+
+//   const handleChangePassword = async () => {
+//     try {
+//       const response = await axios.post('http://localhost:8080/api/user/changePassword', { email, newPassword });
+//       setMessage(response.data.message);
+//       setStep(1); // Reset to step 1 after password change
+//     } catch (error:any) {
+//       setMessage(error.response?.data?.message || 'Đã xảy ra lỗi, vui lòng thử lại.');
+//     }
+//   };
+
+//   return (
+//     <div className="flex flex-col items-center justify-center min-h-screen">
+//       <h1 className="text-2xl mb-4">Quên mật khẩu</h1>
+//       {step === 1 && (
+//         <>
+//           <input
+//             type="email"
+//             placeholder="Nhập email của bạn"
+//             value={email}
+//             onChange={handleEmailChange}
+//             className="p-2 border rounded mb-4"
+//           />
+//           <button onClick={handleSendOTP} className="p-2 bg-blue-500 text-white rounded">
+//             Gửi mã OTP
+//           </button>
+//         </>
+//       )}
+//       {step === 2 && (
+//         <>
+//           <input
+//             type="text"
+//             placeholder="Nhập mã OTP"
+//             value={otp}
+//             onChange={handleOtpChange}
+//             className="p-2 border rounded mb-4"
+//           />
+//           <button onClick={handleVerifyOTP} className="p-2 bg-blue-500 text-white rounded">
+//             Xác nhận mã OTP
+//           </button>
+//         </>
+//       )}
+//       {step === 3 && (
+//         <>
+//           <input
+//             type="password"
+//             placeholder="Nhập mật khẩu mới"
+//             value={newPassword}
+//             onChange={handlePasswordChange}
+//             className="p-2 border rounded mb-4"
+//           />
+//           <button onClick={handleChangePassword} className="p-2 bg-green-500 text-white rounded">
+//             Đổi mật khẩu
+//           </button>
+//         </>
+//       )}
+//       {message && <p className="mt-4">{message}</p>}
+//     </div>
+//   );
+// };
+
+// export default ForgotPasswordPage;
+

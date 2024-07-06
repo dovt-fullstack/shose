@@ -85,10 +85,10 @@ export const CartPage = () => {
       {cart && cart.length > 0 ? (
         <div className='pb-20'>
           <div className='w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold'>
-            <h2 className='col-span-2'>Product</h2>
-            <h2>Price</h2>
-            <h2>Quantity</h2>
-            <h2>Sub Total</h2>
+            <h2 className='col-span-2'>Sản Phẩm</h2>
+            <h2>Giá</h2>
+            <h2>Số lượng</h2>
+            <h2>Tổng tiền</h2>
           </div>
           <div className='mt-5'>
             {cart.map((item, index) => (
@@ -102,7 +102,7 @@ export const CartPage = () => {
             className='px-10 py-2 mb-4 font-semibold text-white uppercase duration-300 bg-red-500 hover:bg-red-700'
             onClick={() => cart.map((item) => handleRemove(item._id, 'all'))}
           >
-            Reset cart
+            ĐẶT LẠI GIỎ HÀNG
           </button>
 
           <div className='flex-col items-center justify-between hidden gap-2 px-4 py-4 border mdl:flex-row mdl:gap-0'>
@@ -118,18 +118,18 @@ export const CartPage = () => {
           </div>
           <div className='flex justify-end gap-4 mt-4 max-w-7xl'>
             <div className='flex flex-col gap-4 w-96'>
-              <h1 className='text-2xl font-semibold text-right'>Cart totals</h1>
+              <h1 className='text-2xl font-semibold text-right'>Tổng số giỏ hàng</h1>
               <div>
                 <p className='flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium'>
-                  Subtotal
+                Tổng tiền đơn hàng
                   <span className='font-semibold tracking-wide font-titleFont'>{total.toLocaleString()}đ</span>
                 </p>
                 <p className='flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium'>
-                  Shipping Charge
+                  Phí Ship
                   <span className='font-semibold tracking-wide font-titleFont'>${shippingCharge}</span>
                 </p>
                 <p className='flex items-center justify-between border-[1px] border-gray-400 py-1.5 text-lg px-4 font-medium'>
-                  Total
+                  Tổng tiền
                   <span className='text-lg font-bold tracking-wide font-titleFont'>
                     {(Number(total) + Number(shippingCharge)).toLocaleString()}đ
                   </span>
@@ -140,7 +140,7 @@ export const CartPage = () => {
                   onClick={handlePayment}
                   className='text-xl mb-2 bg-[#17c6aa] text-white h-10 w-full flex items-center justify-center font-sans hover:bg-black hover:text-white'
                 >
-                  Proceed to Checkout
+                  Tiến hành kiểm tra
                 </button>
               </div>
             </div>

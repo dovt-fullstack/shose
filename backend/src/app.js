@@ -27,13 +27,15 @@ import routerimage_news from './routes/image_news.js';
 import saleRouter from './routes/sale.router.js';
 import checkoutVnpay from './controllers/vnpay.js';
 import routeranalytics from './routes/anilytic.js';
-
+import bodyParser from  'body-parser'
 //config
 const app = express();
 const API_DB = process.env.API_DB;
 // middleware
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser());
+
 // router
 app.use('/api', routerCategory);
 app.use('/api', routerContact);

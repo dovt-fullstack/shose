@@ -92,7 +92,7 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
         )}
       </p>
       <p className='text-base text-gray-600'>{productInfo.description}</p>
-      <p className='text-sm'>Be the first to leave a review.</p>
+      <p className='text-sm'>Hãy là người đầu tiên đưa ra đánh giá.</p>
       <p className='text-lg font-medium'>
         <span className='font-normal'>Size:</span>{' '}
         {productInfo.listQuantityRemain
@@ -151,8 +151,8 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
         Thêm Sản Phẩm
       </button>
       <p className='text-sm font-normal'>
-        <span className='text-base font-medium'> Categories:</span> Spring collection, Streetwear, Women Tags: featured
-        SKU: N/A
+        <span className='text-base font-medium'> Loại: </span>Bộ sưu tập mùa xuân, Dạo phố, Nữ Tags: đặc sắc
+        Mã hàng: Không áp dụng
       </p>
     </div>
   )

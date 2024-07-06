@@ -569,6 +569,8 @@ export const forgotPassword = async (req, res) => {
   }
 };
 
+
+
 export const otpauthentication = async (req, res) => {
   try {
     const { email, otp } = req.body;

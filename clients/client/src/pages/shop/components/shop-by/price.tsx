@@ -8,7 +8,7 @@ interface PriceProps {
 export const Price = ({ onFilterPrice }: PriceProps) => {
   return (
     <div className='mt-10 cursor-pointer'>
-      <NavTitle title='Shop by Price' icons={false} />
+      <NavTitle title='Lọc Giá Sản Phẩm' icons={false} />
       <div className='font-titleFont'>
         <ul className='flex flex-col gap-4 text-sm lg:text-base text-[#767676]'>
           {priceList.map((item) => (

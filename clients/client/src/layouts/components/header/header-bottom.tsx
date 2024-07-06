@@ -156,7 +156,7 @@ export const HeaderBottom = () => {
               type='text'
               onChange={handleSearch}
               value={searchQuery}
-              placeholder='Search your products here'
+              placeholder='Tìm kiếm sản phẩm'
             />
             <FaSearch className='w-5 h-5' />
             {searchQuery !== '' && (

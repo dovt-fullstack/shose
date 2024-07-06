@@ -33,7 +33,7 @@ const CommentSchema = new mongoose.Schema(
       // required: true,
       // min: 0,
       // max: 5,
-      type: String,
+      type: Number,
       required: false,
     },
   },

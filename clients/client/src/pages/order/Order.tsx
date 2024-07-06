@@ -135,6 +135,7 @@ const Orderr = () => {
       total_amount_paid: 0,
       payment_type: 'cash'
     }
+  
 
     // Kiểm tra xem selectedSale._id có tồn tại không
 
@@ -220,6 +221,9 @@ const Orderr = () => {
       ? +selectedSale?.sale
       : (infoCart?.totalPrice * +selectedSale.sale) / 100
     : 0
+
+
+      console.log("saleMoney",saleMoney)
 
   return (
     <div className='mx-5'>
@@ -341,6 +345,7 @@ const Orderr = () => {
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 '>
         <div className='md:col-span-2 '>
           <div className='mx-10 overflow-x-auto'>
+          <div className='flex' style={{position:"relative"}}>
             <table className='table min-w-full text-sm bg-white divide-y-2 divide-gray-200 '>
               <thead className='ltr:text-left rtl:text-right '>
                 <tr>
@@ -364,9 +369,11 @@ const Orderr = () => {
                   </th>
                 </tr>
               </thead>
-
+            
               <tbody className='divide-y divide-gray-200 '>
                 {infoCart?.cartSelected?.map((cart: ICart) => (
+                  <>
+                 
                   <tr className='' key={cart._id}>
                     <td className='flex py-4 font-medium text-left text-gray-900 whitespace-nowrap'>
                       <div className='relative w-[200px]'>
@@ -395,15 +402,24 @@ const Orderr = () => {
                     <td className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
                       {FormatCurrency(cart.price * cart.quantity)}
                     </td>
-                    <td className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
-                      {/* {FormatCurrency(shippingCharge - 20000)} */}
-                      <span>{Number(shippingCharge).toLocaleString('en-US', { })}</span>
-
-                    </td>
+                    
                   </tr>
+                  
+                
+                </>
                 ))}
+                
               </tbody>
+              
+
+
             </table>
+            <td style={{position:"absolute",right:"0px", margin:'130px 20px 10px 15px'}} className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
+                  {/* {FormatCurrency(shippingCharge - 20000)} */}
+                  <span>{Number(shippingCharge).toLocaleString('en-US', { })}</span>
+
+                </td>
+                </div>
           </div>
         </div>
 
@@ -581,7 +597,7 @@ const Orderr = () => {
                   : ''}
 
               </div>
-              <div>Tổng tiền giảm giá: {FormatCurrency(saleMoney) || 0} </div>
+              <div>Tổng tiền giảm giá: {saleMoney} </div>
               <div>Tổng tiền phải thanh toán: {FormatCurrency(infoCart?.totalPrice - saleMoney + shippingCharge)} </div>
             </div>
           </div>

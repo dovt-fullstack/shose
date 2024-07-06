@@ -100,7 +100,7 @@ export const SignupPage = () => {
         >
           <div className='px-6 py-4 w-full h-[96%] flex flex-col justify-center items-center overflow-y-scroll scrollbar-hide scrollbar-thumb-primeColor'>
             <h1 className='font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-2xl mdl:text-3xl mb-4'>
-              Create your account
+              Đăng ký tài khoản
             </h1>
             <div className='flex flex-col w-full gap-3'>
               {/* name */}
@@ -125,7 +125,7 @@ export const SignupPage = () => {
               </div>
               {/* Email */}
               <div className='flex flex-col gap-.5'>
-                <p className='text-base font-semibold text-gray-600 font-titleFont'>Work Email</p>
+                <p className='text-base font-semibold text-gray-600 font-titleFont'>Email</p>
                 <input
                   {...register('email')}
                   className='w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none'
@@ -170,12 +170,12 @@ export const SignupPage = () => {
                     : 'bg-gray-500 hover:bg-gray-500 hover:text-gray-200 cursor-none'
                 } w-full text-gray-200 text-base font-medium h-10 rounded-md hover:text-white duration-300`}
               >
-                Create Account
+                Đăng ký
               </button>
               <p className='text-sm font-medium text-center font-titleFont'>
-                Don't have an Account?{' '}
+               Đã có tài khoản?{' '}
                 <Link to='/signin'>
-                  <span className='duration-300 hover:text-blue-600'>Sign in</span>
+                  <span className='duration-300 hover:text-blue-600'>Đăng Nhập</span>
                 </Link>
               </p>
             </div>

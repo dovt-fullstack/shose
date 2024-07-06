@@ -1,7 +1,6 @@
 import { Pagination, ProductBanner, ShopSideNav } from '.'
 import { useEffect, useState } from 'react'
 import { Breadcrumbs } from '@/components'
-import { IProduct } from '@/types'
 import { useGetProductsQuery } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCategory } from '@/store/slices/CategorySilie'
@@ -13,6 +12,7 @@ const ShopPage = () => {
       _id: '1',
       name: 'Product 1',
       description: 'Product description',
+      price: 100,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -22,6 +22,7 @@ const ShopPage = () => {
       _id: '2',
       name: 'Product 2',
       description: 'Product description',
+      price: 200,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -31,6 +32,7 @@ const ShopPage = () => {
       _id: '3',
       name: 'Product 3',
       description: 'Product description',
+      price: 300,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -40,6 +42,7 @@ const ShopPage = () => {
       _id: '4',
       name: 'Product 4',
       description: 'Product description',
+      price: 400,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -49,6 +52,7 @@ const ShopPage = () => {
       _id: '5',
       name: 'Product 5',
       description: 'Product description',
+      price: 500,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -58,6 +62,7 @@ const ShopPage = () => {
       _id: '6',
       name: 'Product 6',
       description: 'Product description',
+      price: 600,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -67,6 +72,7 @@ const ShopPage = () => {
       _id: '7',
       name: 'Product 7',
       description: 'Product description',
+      price: 700,
       image: [
         'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
       ],
@@ -83,16 +89,11 @@ const ShopPage = () => {
   const selectonfg = useSelector((state: any) => state.category.category)
   console.log('selectonfg', selectonfg)
 
-
-  
   const [selectedPriceRange, setSelectedPriceRange] = useState<{ priceStart: number; priceLow: number }>({
     priceStart: 0,
-    priceLow: Number.MAX_SAFE_INTEGER // Sử dụng giá trị lớn nhất có thể để đảm bảo không có sản phẩm nào bị lọc ra vì giá
+    priceLow: Number.MAX_SAFE_INTEGER
   })
 
-
-
-  // Cập nhật products từ productData khi productData thay đổi
   useEffect(() => {
     if (productData) {
       setOriginalProducts(productData.products)
@@ -100,47 +101,40 @@ const ShopPage = () => {
     }
   }, [productData])
 
-  // Xử lý khi thay đổi bộ lọc thể loại sản phẩm
   const handleFilterCategory = (categoryId: string) => {
     setSelectedCategory(categoryId)
     filterProducts(categoryId, selectedPriceRange)
   }
 
-  // Xử lý khi thay đổi bộ lọc giá
   const handleFilterPrice = (priceStart: number, priceLow: number) => {
     setSelectedPriceRange({ priceStart, priceLow })
     filterProducts(selectedCategory, { priceStart, priceLow })
   }
 
-  // Hàm lọc sản phẩm dựa trên các bộ lọc hiện tại
   const filterProducts = (categoryId: string | undefined, priceRange: { priceStart: number; priceLow: number }) => {
-    console.log("guy")
     let filteredProducts = originalProducts
 
     if (categoryId) {
       filteredProducts = filteredProducts.filter((product) => product.categoryId === categoryId)
     }
 
-    // Uncomment and modify this if you have price filtering
-    // filteredProducts = filteredProducts.filter(
-    //   (product) => product.price >= priceRange.priceStart && product.price <= priceRange.priceLow
-    // )
+    filteredProducts = filteredProducts.filter(
+      (product) => product.price >= priceRange.priceStart && product.price <= priceRange.priceLow
+    )
 
     setProducts(filteredProducts)
   }
 
   useEffect(() => {
     filterProducts(selectonfg, selectedPriceRange)
-  }, [selectonfg])
-
+  }, [selectonfg, selectedPriceRange])
 
   useEffect(() => {
     return () => {
-      // Dispatch action to clear category state when component unmounts
       dispatch(clearCategory());
     };
   }, [dispatch]);
-  // Callback để cập nhật số sản phẩm trên mỗi trang từ ProductBanner
+
   const itemsPerPageFromBanner = (itemsPerPage: number) => {
     setItemsPerPage(itemsPerPage)
   }

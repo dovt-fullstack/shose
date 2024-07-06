@@ -64,7 +64,7 @@ export const Pagination = ({ itemsPerPage, products }: PaginationProps) => {
         />
 
         <p className='text-base font-normal text-lightText'>
-          Products from {itemStart === 0 ? 1 : itemStart} to {endOffset} of {products.length}
+        Sản phẩm từ {itemStart === 0 ? 1 : itemStart} to {endOffset} of {products.length}
         </p>
       </div>
     </div>

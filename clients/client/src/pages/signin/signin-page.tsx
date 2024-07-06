@@ -105,6 +105,9 @@ export const SigninPage = () => {
             </p>
           </div>
         </div>
+        {/* Trên là left */}
+
+
       </div>
       <div className='w-full h-full'>
         <form
@@ -114,7 +117,7 @@ export const SigninPage = () => {
         >
           <div className='px-6 py-4 w-full h-[90%] flex flex-col justify-center overflow-y-scroll scrollbar-hide scrollbar-thumb-primeColor'>
             <h1 className='font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-3xl mdl:text-4xl mb-4'>
-              Sign in
+            Đăng nhập
             </h1>
             <div className='flex flex-col gap-3'>
               {/* Email */}
@@ -136,11 +139,11 @@ export const SigninPage = () => {
 
               {/* Password */}
               <div className='flex flex-col gap-.5'>
-                <p className='text-base font-semibold text-gray-600 font-titleFont'>Password</p>
+                <p className='text-base font-semibold text-gray-600 font-titleFont'>Mật Khẩu</p>
                 <input
                   className='w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none'
                   type='password'
-                  placeholder='Create password'
+                  placeholder='Nhập Mật khẩu'
                   {...register('password')}
                 />
                 {errors.password && (
@@ -157,19 +160,19 @@ export const SigninPage = () => {
                     <div className='w-4 h-4 border-2 border-t-2 border-gray-200 rounded-full animate-spin'></div>
                   </div>
                 ) : (
-                  'Sign In'
+                  'đăng nhập'
                 )}
               </button>
               <p className='text-sm font-medium text-center font-titleFont'>
-                Don't have an Account?{' '}
+                Bạn chưa có tài khoản?{' '}
                 <Link to='/signup'>
-                  <span className='duration-300 hover:text-blue-600'>Sign up</span>
+                  <span className='duration-300 hover:text-blue-600'>Đăng ký</span>
                 </Link>
               </p>
               <p className='text-sm font-medium text-center font-titleFont'>
                 
                 <Link to='/forgotPasswordpage'>
-                  <span className='duration-300 hover:text-blue-600'>ForgotPasswordPage?</span>
+                  <span className='duration-300 hover:text-blue-600'>Quên Mật Khẩu</span>
                 </Link>
               </p>
 
