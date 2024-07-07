@@ -135,7 +135,7 @@ const Orderr = () => {
       total_amount_paid: 0,
       payment_type: 'cash'
     }
-  
+
 
     // Kiểm tra xem selectedSale._id có tồn tại không
 
@@ -369,11 +369,11 @@ const Orderr = () => {
                   </th>
                 </tr>
               </thead>
-            
+
               <tbody className='divide-y divide-gray-200 '>
                 {infoCart?.cartSelected?.map((cart: ICart) => (
                   <>
-                 
+
                   <tr className='' key={cart._id}>
                     <td className='flex py-4 font-medium text-left text-gray-900 whitespace-nowrap'>
                       <div className='relative w-[200px]'>
@@ -402,15 +402,15 @@ const Orderr = () => {
                     <td className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
                       {FormatCurrency(cart.price * cart.quantity)}
                     </td>
-                    
+
                   </tr>
-                  
-                
+
+
                 </>
                 ))}
-                
+
               </tbody>
-              
+
 
 
             </table>
@@ -446,6 +446,7 @@ const Orderr = () => {
             {
               <div className='max-h-[200px] overflow-y-auto space-y-2 px-2'>
                 {filteredDataVoucher.map((sale) => {
+                  console.log(FormatCurrency(Number(sale.sale)),'FormatCurrency(Number(sale.sale))')
                   if (infoCart?.totalPrice < 100000) {
                     // map ra các mã giảm giá có giá trị nhỏ hơn tổng tiền đơn hàng
                     if (sale.sale < infoCart?.totalPrice) {
@@ -460,7 +461,7 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            <span>- {sale.type === 'cash' ? FormatCurrency(Number(sale.sale)) : sale.sale + '%'}</span>
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>
@@ -481,7 +482,7 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            <span>- {sale.type === 'cash' ? FormatCurrency(Number(sale.sale)) : sale.sale + '%'}</span>
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>
@@ -502,7 +503,7 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            <span>- {sale.type === 'cash' ? FormatCurrency(Number(sale.sale)) : sale.sale + '%'}</span>
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>
@@ -546,7 +547,7 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            <span>- {sale.type === 'cash' ?FormatCurrency(Number(sale.sale)) : sale.sale + '%'}</span>
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>
@@ -567,7 +568,7 @@ const Orderr = () => {
                         >
                           <span>{sale.name}</span>
                           <div className='flex justify-between mt-1'>
-                            <span>- {sale.type === 'cash' ? FormatCurrency(+sale.sale) : sale.sale + '%'}</span>
+                            <span>- {sale.type === 'cash' ? FormatCurrency(Number(sale.sale)) : sale.sale + '%'}</span>
                             <span>sl: {sale.usageLimit}</span>
                           </div>
                         </div>

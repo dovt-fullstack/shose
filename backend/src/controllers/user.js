@@ -511,7 +511,7 @@ export const forgotPassword = async (req, res) => {
       });
     }
     // Tạo mã OTP ngẫu nhiên
-    const otp = Math.floor(100000 + Math.random() * 900000);
+    const otp2 = Math.floor(100000 + Math.random() * 900000);
     // Gửi mã OTP qua email
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -527,7 +527,7 @@ export const forgotPassword = async (req, res) => {
           from: "vietquang1312002@gmail.com", // Điền thông tin người gửi ở đây
           to: email, // Địa chỉ email người nhận
           subject: "Mã xác nhận đổi mật khẩu", // Tiêu đề email
-          text: `Mã xác nhận của bạn là: ${otp}`, // Nội dung email dạng text
+          text: `Mã xác nhận của bạn là: ${otp2}`, // Nội dung email dạng text
         });
         console.log("Message sent: %s", info.messageId);
         return true;
@@ -568,8 +568,6 @@ export const forgotPassword = async (req, res) => {
     });
   }
 };
-
-
 
 export const otpauthentication = async (req, res) => {
   try {
@@ -670,13 +668,13 @@ async function sendEmail(email, otp) {
       port: 465,
       secure: true,
       auth: {
-        user: EMAIL_USERNAME,
-        pass: EMAIL_PASSWORD,
+        user: "hungnono2003@gmail.com",
+        pass: "ryglqbepydngyoif",
       },
     });
 
     const info = await transporter.sendMail({
-      from: "your-email@gmail.com",
+      from: "hungnono2003@gmail.com",
       to: email,
       subject: "Mã xác nhận đổi mật khẩu",
       text: `Mã xác nhận của bạn là: ${otp}`,

@@ -10,7 +10,7 @@ const router = express.Router();
 router.get("/GetDetailOrder", Order.GetDetailOrder);
 router.get("/GetAllOrder", Order.GetAllOrder);
 router.get("/orders", Order.getAll);
-router.post("/orders", OrderValidator.validation, Order.createOrder);
+router.post("/orders", Order.createOrder);
 router.put("/orders/:id", Order.updateStatus);
 router.get("/orders/:id", Order.getOrderById);
 

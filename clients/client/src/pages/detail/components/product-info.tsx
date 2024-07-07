@@ -44,16 +44,20 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
       message.error('Bạn chưa chọn size sản phẩm!')
       return
     }
-  
+
     // Tìm sản phẩm trong giỏ hàng có _id tương tự với sản phẩm đang xét
     const cartItem = cart.find(item => item._id === productInfo._id)
-  
+
     if (cartItem) {
+      console.log(cartItem,'cartItem')
       // Nếu sản phẩm đã có trong giỏ hàng, kiểm tra xem số lượng đã chọn có vượt quá số lượng hiện có hay không
-      if (quantiry + cartItem.quantity > sizeSelected.quantity) {
+      if (cartItem.nameSize == sizeSelected) {
+        if (quantiry + cartItem.quantity > sizeSelected.quantity) {
         message.error('Số lượng sản phẩm không đủ!')
         return
       }
+      }
+
     } else {
       // Nếu sản phẩm chưa có trong giỏ hàng, kiểm tra xem số lượng đã chọn có vượt quá số lượng hiện có hay không
       if (quantiry > sizeSelected.quantity) {
@@ -61,7 +65,7 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
         return
       }
     }
-  
+
     const data = {
       _id: productInfo._id,
       nameProduct: productInfo.name,
@@ -72,7 +76,7 @@ export const ProductInfo = ({ productInfo }: ProductInfoProps) => {
       image: productInfo.image[0],
       maxQuantity: productInfo.quantity
     }
-  
+
     dispatch(addProductToCart(data))
     message.success('Thêm sản phẩm vào giỏ hàng thành công!')
   }

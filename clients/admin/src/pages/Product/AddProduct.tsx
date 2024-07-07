@@ -39,7 +39,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
       notification.success({
         message: 'Success',
         description: 'Thêm sản phẩm thành công'
-        
+
       })
       alert("thêm thành công ")
     }
@@ -59,7 +59,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
       image: img,
       warehouseId: products.warehouseId,
       description: products.description,
-      hot_sale: products.hot_sale,
+      hot_sale: '123',
       categoryId: products.categoryId,
       listQuantityRemain: products.listQuantityRemain.map((item: any) => ({
         colorHex:
@@ -228,7 +228,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
                   </Space>
                 ))}
 
-                <Button type='dashed' onClick={() => add} block>
+                <Button type='dashed' onClick={() => add()} block>
                   + Thêm biến thể
                 </Button>
                 <Form.ErrorList className='text-red-500' errors={errors} />

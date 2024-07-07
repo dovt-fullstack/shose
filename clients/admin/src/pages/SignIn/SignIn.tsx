@@ -47,7 +47,7 @@ export default function SignIn() {
         });
     }
   };
-  
+
   return (
     <>
       <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js' defer></script>
@@ -133,7 +133,7 @@ export default function SignIn() {
                     </div>
                     <div className='flex -mx-3 mt-5'>
                       <div className='w-full px-3 mb-5 text-black hover:text-blue-400'>
-                        <Link to='/forgotPassword'>Quên mật khẩu</Link>
+                        <Link to='http://localhost:3002/forgotPasswordpage'>Quên mật khẩu</Link>
                       </div>
                     </div>
                     <button

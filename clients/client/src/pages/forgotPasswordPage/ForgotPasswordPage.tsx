@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
-import useHistory from 'use-history'
-
-
+import { useNavigate } from "react-router-dom";
 
 interface ForgotPasswordPageProps {}
 
 const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
   const [email, setEmail] = useState("");
   const [emailSent, setEmailSent] = useState(false);
-  const [otp, setOtp] = useState("12345"); // Mặc định mã OTP là 12345
+  const [otp, setOtp] = useState(""); // Mặc định mã OTP là 12345
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-
-
+  const [checkC,setCheckC] = useState(false);
+  const [checkOtp,setCheckOtp] = useState(false);
+  const navigate = useNavigate()
   console.log("",history)
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
@@ -22,12 +21,13 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
 
     try {
       // Gọi API để kiểm tra email và gửi mã OTP
-      const response = await axios.get("http://localhost:8080/api/user");
-      const userExists = response.data.users.find((user: any) => user.email === email);
-
-      if (userExists) {
-        // Gửi yêu cầu đổi mật khẩu qua email (chỉ cần gửi yêu cầu, không cần thực hiện gửi mã OTP tại đây)
+      const dataReq = {
+        mail : email
+      }
+      const response = await axios.post("http://localhost:8080/confirm-mail", dataReq);
+      if (response.status) {
         setEmailSent(true);
+        setCheckOtp(true)
       } else {
         setError("Email không tồn tại trong hệ thống.");
       }
@@ -49,17 +49,23 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
     e.preventDefault();
 
     try {
+       const dataReq = {
+         mail: email,
+         otp: Number(otp)
+      }
       // Gọi API để xác nhận mã OTP
       const response = await axios.post(
-        "http://localhost:8080/api/auth/otpauthentication",
-        { email, otp }
+        "http://localhost:8080/check-otp",
+      dataReq
       );
+        console.log(response,"response")
+      if (response.data.status == true) {
+        setCheckC(true)
+        setCheckOtp(false)
 
-      if (response.data.message === "Mã OTP xác nhận thành công.") {
-        // Hiển thị form để nhập mật khẩu mới
-        console.log("OTP authenticated successfully!");
-        // Chuyển sang form nhập mật khẩu mới
-        // Ví dụ: history.push('/reset-password');
+      } else {
+      setError("Mã xác nhận không hợp lệ ");
+
       }
     } catch (error) {
       setError("Mã xác nhận không hợp lệ hoặc có lỗi xảy ra.");
@@ -72,7 +78,7 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
     e.preventDefault();
 
     try {
-      
+
       // Gọi API để đổi mật khẩu
       const response = await axios.patch(
         "http://localhost:8080/api/auth/resetpassword",
@@ -84,7 +90,9 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
         // Xử lý khi đổi mật khẩu thành công
         console.log("Password changed successfully!");
         // url.push('/')
-        
+        setTimeout(() => {
+          navigate('/')
+        }, 450);
         // Điều hướng tới trang thông báo đổi mật khẩu thành công
         // Ví dụ: history.push('/password-changed');
       }
@@ -100,7 +108,6 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
         <label className="block text-sm font-medium text-gray-700">Email:</label>
         <input
           type="email"
-          value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
           className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
@@ -113,11 +120,13 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
         </button>
       </form>
     ) : (
-      <form onSubmit={handleOtpSubmit} className="space-y-4">
+    <></>
+
+    )}
+  {checkOtp &&   <form onSubmit={handleOtpSubmit} className="space-y-4">
         <label className="block text-sm font-medium text-gray-700">Nhập mã OTP:</label>
         <input
           type="text"
-          value={otp}
           onChange={(e) => setOtp(e.target.value)}
           required
           className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
@@ -128,11 +137,8 @@ const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = () => {
         >
           Xác nhận OTP
         </button>
-      </form>
-      
-    )}
-
-    {emailSent && (
+      </form>}
+    {checkC && (
       <form onSubmit={handlePasswordChange} className="space-y-4 mt-4">
         <label className="block text-sm font-medium text-gray-700">Nhập mật khẩu mới:</label>
         <input
