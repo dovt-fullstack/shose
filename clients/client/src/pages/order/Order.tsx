@@ -358,29 +358,30 @@ const Orderr = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 '>
         <div className='md:col-span-2 '>
-          <div className='mx-10 overflow-x-auto'>
+          <div className=''>
           <div className='flex' style={{position:"relative"}}>
             <table className='table min-w-full text-sm bg-white divide-y-2 divide-gray-200 '>
               <thead className='ltr:text-left rtl:text-right '>
                 <tr>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Ảnh
                   </th>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Tên
                   </th>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Số Lượng
                   </th>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Giá
                   </th>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Thành tiền
                   </th>
-                  <th className='px-1 py-4 font-medium text-left text-gray-900 whitespace-nowrap text:xs lg:text-xl'>
+                  <th className=' py-4  text-left text-gray-900 whitespace-nowrap text:xs'>
                     Phí Ship
-                  </th>
+                    </th>
+
                 </tr>
               </thead>
 
@@ -391,12 +392,12 @@ const Orderr = () => {
                   <tr className='' key={cart._id}>
                     <td className='flex py-4 font-medium text-left text-gray-900 whitespace-nowrap'>
                       <div className='relative w-[200px]'>
-                        <img className='object-cover w-full h-auto lg:w-40 md:w-40' src={cart?.image} alt='' />
+                        <img className='object-cover w-[80px]' src={cart?.image} alt='' />
                       </div>
                     </td>
                     <td className='py-4 text-gray-700 whitespace-nowrap '>
                       <div className='items-center '>
-                        <p className='text-xs lg:text-xl md:text-xl'>{cart.nameProduct}</p>
+                        <p className='text-xs lg:text-sm'>{cart.nameProduct}</p>
                         <div className='flex items-center gap-1'>
                           <span className='text-xs lg:text-base md:text-xl '>Màu:</span>
                           <span
@@ -418,7 +419,11 @@ const Orderr = () => {
                     </td>
 
                   </tr>
+  <td style={{position:"absolute",right:"0px", top:'80px' }} className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
+                  {/* {FormatCurrency(shippingCharge - 20000)} */}
+                  <span>{Number(shippingCharge).toLocaleString('en-US', { })}</span>
 
+                </td>
 
                 </>
                 ))}
@@ -428,11 +433,7 @@ const Orderr = () => {
 
 
             </table>
-            <td style={{position:"absolute",right:"0px", margin:'130px 20px 10px 15px'}} className='px-1 py-4 text-xs text-gray-700 whitespace-nowrap lg:text-xl md:text-xl'>
-                  {/* {FormatCurrency(shippingCharge - 20000)} */}
-                  <span>{Number(shippingCharge).toLocaleString('en-US', { })}</span>
 
-                </td>
                 </div>
           </div>
         </div>
