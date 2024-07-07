@@ -29,6 +29,7 @@ const Orderr = () => {
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
   const { data } = useGetAllSalesQuery()
+  console.log("data",data)
 
   const [infoCart, setInfoCart] = useState<any>()
 
@@ -39,7 +40,10 @@ const Orderr = () => {
   const [decreaseSale] = useDecreaseSaleMutation()
   const [shouldShowDiscountButton, setShouldShowDiscountButton] = useState(true)
 
+
+  // thêm dữ 
   const [vnPayFn, vnPayRes] = usePaymentByVNpayMutation()
+  // console.log("vnPayFn",vnPayRes)
 
   useEffect(() => {
     if (vnPayRes.error) {
@@ -82,6 +86,8 @@ const Orderr = () => {
     return setSelectedSale({} as any)
   }
 
+
+  // map ra voucher 
   const addVoucher = async () => {
     if (voucherValue && voucherValue !== '') {
       try {
@@ -116,6 +122,11 @@ const Orderr = () => {
     }
   }
 
+
+
+
+
+
   const formatPaymentOrder = (infoCart: any) => {
     const transformedArray = infoCart?.cartSelected.map((item: any) => {
       return {
@@ -141,6 +152,9 @@ const Orderr = () => {
 
     return dataCreateCart
   }
+
+
+  // phần thanh toán 
   const handlePayment = () => {
     if (address == '') {
       toast.error('Vui lòng nhập địa chỉ')
@@ -623,7 +637,7 @@ const Orderr = () => {
                 onClick={handlePayment}
                 className='text-xl mb-2 bg-[#17c6aa] text-white h-[60px] w-full flex items-center justify-center font-sans hover:bg-black hover:text-white'
               >
-                ĐẶT HÀNG
+                ĐẶT HÀNG 
               </button>
             </div>
           </div>

@@ -15,6 +15,8 @@ interface CardThreeProps {
 }
 
 const CardThree = ({ data, data2 }: CardThreeProps) => {
+console.log("datafefe",data)
+
   const [index, setIndex] = useState(0)
   const [index2, setIndex2] = useState(0)
   const [statusOrder, setStatusOrder] = useState('pending')
@@ -76,6 +78,8 @@ const CardThree = ({ data, data2 }: CardThreeProps) => {
   return (
     <>
       <div className='grid grid-cols-4 gap-5 w-full'>
+
+        {/* map phần xử lý đơn hàng  */}
         {data &&
           data?.countOrderStatus.map((orderStatus, index) => (
             <div key={index + '454'} className='rounded-sm border border-stroke  py-6 px-7.5 shadow-default   '>
@@ -90,11 +94,15 @@ const CardThree = ({ data, data2 }: CardThreeProps) => {
                   </h4>
                   <span className='text-base font-medium'>
                     {orderStatus.value} đơn {renderOrderStatus(orderStatus.name).toLowerCase()}
+                    
                   </span>
                 </div>
               </div>
             </div>
           ))}
+
+
+          
 
         <CardTwo price={data2?.['doanh thu tháng này']['tổng doanh thu']} title={''} />
 

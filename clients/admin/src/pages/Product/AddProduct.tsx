@@ -19,6 +19,8 @@ type Props = {
 const AddProduct = ({ setIsModalVisible }: Props) => {
   const navigate = useNavigate()
   const [addproduct, addproductRes] = useAddProductMutation()
+
+  
   const { data: category } = useGetCategorysQuery()
   const { data: wareHouseList } = useGetallWareHousesQuery()
   const [newWarehouse,setNew]=useState([])
@@ -32,6 +34,8 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
   },[])
   const { TextArea } = Input
   const [form] = Form.useForm()
+
+
 
   useEffect(() => {
     if (addproductRes.isSuccess) {
@@ -52,6 +56,10 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
   const handleImageRemove = (url: string) => {
     setImg((prevImg) => prevImg.filter((imageUrl: string) => imageUrl !== url))
   }
+
+
+
+  // hàm để thêm sản phẩm 
   const onFinish = async (products: IProduct) => {
     const product = {
       name: products.name,
@@ -72,7 +80,7 @@ const AddProduct = ({ setIsModalVisible }: Props) => {
       }))
     }
 
-    // return;
+    // return; ra 
     await addproduct(product as any)
     setIsModalVisible(false)
 

@@ -69,6 +69,8 @@ export const HeaderBottom = () => {
   const navigate = useNavigate()
 
   const [searchQuery, setSearchQuery] = useState('')
+
+  
   const [filteredProducts, setFilteredProducts] = useState<IProduct[]>([])
   // const [showSearchBar, setShowSearchBar] = useState(false)
 
@@ -151,6 +153,8 @@ export const HeaderBottom = () => {
             )}
           </div>
           <div className='relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl'>
+
+
             <input
               className='flex-1 h-full outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px]'
               type='text'
@@ -158,6 +162,8 @@ export const HeaderBottom = () => {
               value={searchQuery}
               placeholder='Tìm kiếm sản phẩm'
             />
+
+
             <FaSearch className='w-5 h-5' />
             {searchQuery !== '' && (
               <div

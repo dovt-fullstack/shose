@@ -40,8 +40,10 @@ export const SigninPage = () => {
     handleLogin(data)
       .unwrap()
       .then((res) => {
+        
         dispatch(setUser(res.user))
         const user = res.user
+     
         localStorage.setItem('user_client', JSON.stringify(user))
         navigate('/')
       })

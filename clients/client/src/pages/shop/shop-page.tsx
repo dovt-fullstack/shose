@@ -86,8 +86,9 @@ const ShopPage = () => {
   const [products, setProducts] = useState<any[]>(productData?.products || productDemo)
   const [itemsPerPage, setItemsPerPage] = useState(12)
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
+
   const selectonfg = useSelector((state: any) => state.category.category)
-  console.log('selectonfg', selectonfg)
+  console.log('selectonfg', products)
 
   const [selectedPriceRange, setSelectedPriceRange] = useState<{ priceStart: number; priceLow: number }>({
     priceStart: 0,
@@ -111,6 +112,8 @@ const ShopPage = () => {
     filterProducts(selectedCategory, { priceStart, priceLow })
   }
 
+
+  // filtler ra giá với category
   const filterProducts = (categoryId: string | undefined, priceRange: { priceStart: number; priceLow: number }) => {
     let filteredProducts = originalProducts
 
@@ -128,6 +131,8 @@ const ShopPage = () => {
   useEffect(() => {
     filterProducts(selectonfg, selectedPriceRange)
   }, [selectonfg, selectedPriceRange])
+
+
 
   useEffect(() => {
     return () => {

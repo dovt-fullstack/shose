@@ -32,10 +32,12 @@ export default function SignIn() {
             if (res.user.role.role_name === 'admin') {
               message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
               navigate('/admin');
-            } else if (res.user.role.role_name === 'nhân viên') {
+            }
+             else if (res.user.role.role_name === 'nhân viên') {
               message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
               navigate('/admin');
-            } else if (res.user.role.role_name === 'quản lý') {
+            }
+             else if (res.user.role.role_name === 'quản lý') {
               message.success('Đăng nhập thành công với vai trò ' + res.user.role.role_name);
               navigate('/admin');
             } else {

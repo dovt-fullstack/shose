@@ -57,7 +57,7 @@ const HomeAdmin = () => {
       Tổng: categoryData?.data.length,
       'Đang hoạt động': categoryData && handleDataArr(categoryData.data, 'trang_thai', 'Active')
     },
-    { name: 'Bài viết', Tổng: 45, 'Đang hoạt động': 45 },
+    // { name: 'Bài viết', Tổng: 45, 'Đang hoạt động': 45 },
     {
       name: 'Danh mục bài viết',
       Tổng: tintucData?.length,

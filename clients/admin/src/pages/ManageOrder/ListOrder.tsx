@@ -27,11 +27,18 @@ interface IOrderTable {
   moneny: number
 }
 export default function ListOrder() {
+
+  //lấy dữ liệu các đơn hàng 
   const { data: orderClient } = useGetAllOrdersInAdminQuery()
+
+console.log("orderClient",orderClient)
+
+
   const [userName, setUserName] = useState('')
 
   const { RangePicker } = DatePicker
   const [filterStatus, setFilterStatus] = useState('')
+
   const [changeStatusOrderFn, _] = useChangeStatusOrderMutation()
   const [dataOrder, setDataOrder] = useState<IOrderTable[]>([])
   const arrStatus = [
@@ -55,6 +62,9 @@ export default function ListOrder() {
     return JSON.parse(address)
   }
 
+
+
+  // đổi trạng thái đơn hàng 
   const handleChangeStatus = async (data: { id: string; status: string }) => {
     changeStatusOrderFn(data).then((status: any) => {
       if (status.error) {
@@ -72,6 +82,9 @@ export default function ListOrder() {
     })
   }
 
+
+
+  
   const handeleOrder = (data: any[]) => {
     return data.map((order) => ({
       code: order._id,

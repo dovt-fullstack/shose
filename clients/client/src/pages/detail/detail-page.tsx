@@ -12,7 +12,7 @@ import { RootState } from '@reduxjs/toolkit/query'
 
 export const DetailPage = () => {
   const { user } = useAppSelector((state: any) => state)
-  console.log("user", user.user.fullname)
+  // console.log("user", user.user.fullname)
 
   const { id } = useParams()
   const [productList, setProductList] = useState<IProduct[]>([])
@@ -30,22 +30,31 @@ export const DetailPage = () => {
   const [commentImage, setCommentImage] = useState<string>('');
 
 
+  // fillter ra id trùng với id category
   const productt = commentData.filter((items: any) => items.productId === selectedProductId)
 
   console.log("productt", productt)
+
+
+  // call api
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get("http://localhost:8080/api/comments")
       setCommentData(response.data)
     }
     fetchData()
-  }, [])
+  }, [commentData])
+  
+  console.log("user.user.fullname",user)
 
 
+
+  // hàm để call api Comment
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     try {
+      // lấy dữ liệu từ user nhập vào 
       const requestData = {
         content: commentContent,
         rating: rating,
@@ -71,7 +80,6 @@ export const DetailPage = () => {
 
 
 
-
   useEffect(() => {
     if (productList.length > 0) {
       setSelectedProductId(productList[0]._id); // Chọn sản phẩm đầu tiên mặc định
@@ -93,6 +101,7 @@ export const DetailPage = () => {
   if (isError) {
     return <div>Error</div>
   }
+
 
   return (
     <div className='w-full mx-auto border-b-[1px] border-b-gray-300'>
