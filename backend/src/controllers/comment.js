@@ -21,8 +21,7 @@ export const createComment = async (req, res) => {
 };
 export const getComments = async (req, res) => {
   try {
-    const data = await Comment
-    .find();
+    const data = await Comment.find();
 
     if (data.length == 0) {
       return res.status(404).json({ message: "Lấy tất cả " });
@@ -33,7 +32,6 @@ export const getComments = async (req, res) => {
     return res.status(500).json({ message: error });
   }
 };
-
 
 //  xóa bình luận
 export const deleteComment = async (req, res) => {

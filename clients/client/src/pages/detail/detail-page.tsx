@@ -30,9 +30,9 @@ export const DetailPage = () => {
   const [commentImage, setCommentImage] = useState<string>('');
 
 
-  const productt = commentData.filter((items: any) => items.productId === selectedProductId)
+  const productt = commentData.filter((items: any) => items.productId == id )
 
-  console.log("productt", productt)
+  console.log("commentData", commentData)
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get("http://localhost:8080/api/comments")
@@ -52,7 +52,7 @@ export const DetailPage = () => {
         image: commentImage || '',
         fullname: user.user.fullname || '',
         userId: user.user._id || '',
-        productId: selectedProductId
+        productId: id
       };
 
       // Gọi API sử dụng axios
@@ -194,7 +194,7 @@ export const DetailPage = () => {
                     onChange={(e) => setCommentImage(e.target.value)}
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     placeholder="Nhập bình luận"
-                    
+
                   />
                 </div>
 
