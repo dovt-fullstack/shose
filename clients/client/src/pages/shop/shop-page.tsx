@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components'
 import { useGetProductsQuery } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCategory } from '@/store/slices/CategorySilie'
+import { useSearchParams } from 'react-router-dom'
 
 const ShopPage = () => {
   const { data: productData } = useGetProductsQuery()
@@ -79,7 +80,8 @@ const ShopPage = () => {
       categoryId: '2'
     }
   ]
-
+  const [searchParams] = useSearchParams()
+  
   const dispatch = useDispatch();
 
   const [originalProducts, setOriginalProducts] = useState<any[]>(productData?.products || productDemo)
@@ -88,7 +90,6 @@ const ShopPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
 
   const selectonfg = useSelector((state: any) => state.category.category)
-  console.log('selectonfg', products)
 
   const [selectedPriceRange, setSelectedPriceRange] = useState<{ priceStart: number; priceLow: number }>({
     priceStart: 0,

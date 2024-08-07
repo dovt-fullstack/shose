@@ -1,5 +1,5 @@
 import { FaCaretDown, FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
-import { Link, useNavigate } from 'react-router-dom'
+import { createSearchParams, Link, useNavigate } from 'react-router-dom'
 import { useAppSelector, useGetCategoriesQuery, useGetProductsQuery } from '@/store'
 import { useEffect, useRef, useState } from 'react'
 
@@ -35,15 +35,13 @@ const categoryDemo = [
 ]
 
 export const HeaderBottom = () => {
-  
+  const navigate = useNavigate()
 
   const { data: productData } = useGetProductsQuery()
   const [products, setProducts] = useState<IProduct[]>(productData?.products || [])
   const dispath = useDispatch()
 
-
   const handleFilterCateId = (id: any) => {
-
     dispath(setFilterCategory(id))
   }
   const {
@@ -66,11 +64,8 @@ export const HeaderBottom = () => {
     })
   }, [show, ref])
 
-  const navigate = useNavigate()
-
   const [searchQuery, setSearchQuery] = useState('')
 
-  
   const [filteredProducts, setFilteredProducts] = useState<IProduct[]>([])
   // const [showSearchBar, setShowSearchBar] = useState(false)
 
@@ -82,7 +77,7 @@ export const HeaderBottom = () => {
     if (!searchQuery || searchQuery === '') {
       setFilteredProducts([])
     }
-    const filtered = products.filter((item) => item.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    const filtered = products?.filter((item) => item?.name?.toLowerCase().includes(searchQuery.toLowerCase()))
     setFilteredProducts(filtered)
   }, [searchQuery, products])
 
@@ -91,7 +86,6 @@ export const HeaderBottom = () => {
       setProducts(productData.products)
     }
   }, [productData])
-
 
   const { isError, isFetching, data } = useGetCategoriesQuery()
   if (isError) return <p>Error</p>
@@ -134,18 +128,16 @@ export const HeaderBottom = () => {
                 <li className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'>
                   CONVERSE
                 </li> */}
-                {data.data.map((cate) => {
+                {data?.data?.map((cate) => {
                   return (
                     <>
-                    <li
-                      key={cate._id}
-                      className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'
-                      onClick={() => handleFilterCateId(cate._id)}
-                    >
-                      {cate.name}
-                    
-                    </li>
-
+                      <li
+                        key={cate._id}
+                        className='text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer'
+                        onClick={() => handleFilterCateId(cate._id)}
+                      >
+                        {cate.name}
+                      </li>
                     </>
                   )
                 })}
@@ -153,8 +145,6 @@ export const HeaderBottom = () => {
             )}
           </div>
           <div className='relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl'>
-
-
             <input
               className='flex-1 h-full outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px]'
               type='text'
@@ -162,7 +152,6 @@ export const HeaderBottom = () => {
               value={searchQuery}
               placeholder='Tìm kiếm sản phẩm'
             />
-
 
             <FaSearch className='w-5 h-5' />
             {searchQuery !== '' && (
